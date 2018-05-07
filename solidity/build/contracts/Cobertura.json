@@ -1,0 +1,1509 @@
+{
+  "contractName": "Cobertura",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_agrupadores",
+          "type": "uint8[]"
+        }
+      ],
+      "name": "registrarCoberturas",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_agrupador",
+          "type": "uint8"
+        },
+        {
+          "name": "_possuiCobertura",
+          "type": "bool"
+        }
+      ],
+      "name": "alterarCobertura",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_agrupador",
+          "type": "uint8"
+        }
+      ],
+      "name": "possuiCobertura",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a7230582010a3731e0ba2da3eb4f0b5af3aba2d76580b8e8cd59b791a66306ee663db06620029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a7230582010a3731e0ba2da3eb4f0b5af3aba2d76580b8e8cd59b791a66306ee663db06620029",
+  "sourceMap": "28:537:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;28:537:2;;;;;;;",
+  "deployedSourceMap": "28:537:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:183;;8:9:-1;5:2;;;30:1;27;20:12;5:2;105:183:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;445:117;;8:9:-1;5:2;;;30:1;27;20:12;5:2;445:117:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;300:133;;8:9:-1;5:2;;;30:1;27;20:12;5:2;300:133:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;105:183;179:6;188:1;179:10;;174:107;195:12;:19;191:1;:23;174:107;;;265:4;236:9;:26;246:12;259:1;246:15;;;;;;;;;;;;;;;;;;236:26;;;;;;;;;;;;;;;;:33;;;;;;;;;;;;;;;;;;216:3;;;;;;;174:107;;;105:183;;:::o;445:117::-;509:4;533:9;:21;543:10;533:21;;;;;;;;;;;;;;;;;;;;;;;;;526:28;;445:117;;;:::o;300:133::-;409:16;385:9;:21;395:10;385:21;;;;;;;;;;;;;;;;:40;;;;;;;;;;;;;;;;;;300:133;;:::o",
+  "source": "pragma solidity ^0.4.21;\r\n\r\ncontract Cobertura {\r\n    \r\n    mapping(uint8 => bool) cobertura;\r\n    \r\n    function registrarCoberturas(uint8[] _agrupadores) public {\r\n        for (uint x = 0; x < _agrupadores.length; x++) {\r\n            cobertura[_agrupadores[x]] = true;\r\n        }\r\n    }\r\n    \r\n    function alterarCobertura(uint8 _agrupador, bool _possuiCobertura) public {\r\n        cobertura[_agrupador] = _possuiCobertura;\r\n    }\r\n    \r\n    function possuiCobertura(uint8 _agrupador) public view returns (bool) {\r\n        return cobertura[_agrupador];\r\n    }\r\n}",
+  "sourcePath": "C:\\DEVBC\\OperadoraBlockchain\\solidity\\contracts\\Cobertura.sol",
+  "ast": {
+    "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
+    "exportedSymbols": {
+      "Cobertura": [
+        420
+      ]
+    },
+    "id": 421,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 361,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 420,
+        "linearizedBaseContracts": [
+          420
+        ],
+        "name": "Cobertura",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 365,
+            "name": "cobertura",
+            "nodeType": "VariableDeclaration",
+            "scope": 420,
+            "src": "60:32:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+              "typeString": "mapping(uint8 => bool)"
+            },
+            "typeName": {
+              "id": 364,
+              "keyType": {
+                "id": 362,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "68:5:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "60:22:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                "typeString": "mapping(uint8 => bool)"
+              },
+              "valueType": {
+                "id": 363,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "77:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 392,
+              "nodeType": "Block",
+              "src": "163:125:2",
+              "statements": [
+                {
+                  "body": {
+                    "id": 390,
+                    "nodeType": "Block",
+                    "src": "221:60:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 388,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 382,
+                              "name": "cobertura",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 365,
+                              "src": "236:9:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                                "typeString": "mapping(uint8 => bool)"
+                              }
+                            },
+                            "id": 386,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 383,
+                                "name": "_agrupadores",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 368,
+                                "src": "246:12:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                                  "typeString": "uint8[] memory"
+                                }
+                              },
+                              "id": 385,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 384,
+                                "name": "x",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 372,
+                                "src": "259:1:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "246:15:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint8",
+                                "typeString": "uint8"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "236:26:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "hexValue": "74727565",
+                            "id": 387,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "265:4:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "236:33:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 389,
+                        "nodeType": "ExpressionStatement",
+                        "src": "236:33:2"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 378,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 375,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 372,
+                      "src": "191:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 376,
+                        "name": "_agrupadores",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 368,
+                        "src": "195:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                          "typeString": "uint8[] memory"
+                        }
+                      },
+                      "id": 377,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "195:19:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "191:23:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 391,
+                  "initializationExpression": {
+                    "assignments": [
+                      372
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 372,
+                        "name": "x",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 393,
+                        "src": "179:6:2",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 371,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "179:4:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 374,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 373,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "188:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "179:10:2"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 380,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "216:3:2",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 379,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 372,
+                        "src": "216:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 381,
+                    "nodeType": "ExpressionStatement",
+                    "src": "216:3:2"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "174:107:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 393,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "registrarCoberturas",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 369,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 368,
+                  "name": "_agrupadores",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 393,
+                  "src": "134:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 366,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "134:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 367,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "134:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:22:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 370,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "163:0:2"
+            },
+            "scope": 420,
+            "src": "105:183:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 406,
+              "nodeType": "Block",
+              "src": "374:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 404,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 400,
+                        "name": "cobertura",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 365,
+                        "src": "385:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                          "typeString": "mapping(uint8 => bool)"
+                        }
+                      },
+                      "id": 402,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 401,
+                        "name": "_agrupador",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 395,
+                        "src": "395:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "385:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 403,
+                      "name": "_possuiCobertura",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 397,
+                      "src": "409:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "385:40:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 405,
+                  "nodeType": "ExpressionStatement",
+                  "src": "385:40:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 407,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "alterarCobertura",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 395,
+                  "name": "_agrupador",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 407,
+                  "src": "326:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 394,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 397,
+                  "name": "_possuiCobertura",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 407,
+                  "src": "344:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 396,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "344:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "325:41:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "374:0:2"
+            },
+            "scope": 420,
+            "src": "300:133:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 418,
+              "nodeType": "Block",
+              "src": "515:47:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 414,
+                      "name": "cobertura",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 365,
+                      "src": "533:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                        "typeString": "mapping(uint8 => bool)"
+                      }
+                    },
+                    "id": 416,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 415,
+                      "name": "_agrupador",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 409,
+                      "src": "543:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "533:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 413,
+                  "id": 417,
+                  "nodeType": "Return",
+                  "src": "526:28:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 419,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "possuiCobertura",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 409,
+                  "name": "_agrupador",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 419,
+                  "src": "470:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 408,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "470:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "469:18:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 413,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 412,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 419,
+                  "src": "509:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 411,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "509:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "508:6:2"
+            },
+            "scope": 420,
+            "src": "445:117:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 421,
+        "src": "28:537:2"
+      }
+    ],
+    "src": "0:565:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
+    "exportedSymbols": {
+      "Cobertura": [
+        420
+      ]
+    },
+    "id": 421,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 361,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".21"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 420,
+        "linearizedBaseContracts": [
+          420
+        ],
+        "name": "Cobertura",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 365,
+            "name": "cobertura",
+            "nodeType": "VariableDeclaration",
+            "scope": 420,
+            "src": "60:32:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+              "typeString": "mapping(uint8 => bool)"
+            },
+            "typeName": {
+              "id": 364,
+              "keyType": {
+                "id": 362,
+                "name": "uint8",
+                "nodeType": "ElementaryTypeName",
+                "src": "68:5:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint8",
+                  "typeString": "uint8"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "60:22:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                "typeString": "mapping(uint8 => bool)"
+              },
+              "valueType": {
+                "id": 363,
+                "name": "bool",
+                "nodeType": "ElementaryTypeName",
+                "src": "77:4:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 392,
+              "nodeType": "Block",
+              "src": "163:125:2",
+              "statements": [
+                {
+                  "body": {
+                    "id": 390,
+                    "nodeType": "Block",
+                    "src": "221:60:2",
+                    "statements": [
+                      {
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 388,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "argumentTypes": null,
+                            "baseExpression": {
+                              "argumentTypes": null,
+                              "id": 382,
+                              "name": "cobertura",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 365,
+                              "src": "236:9:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                                "typeString": "mapping(uint8 => bool)"
+                              }
+                            },
+                            "id": 386,
+                            "indexExpression": {
+                              "argumentTypes": null,
+                              "baseExpression": {
+                                "argumentTypes": null,
+                                "id": 383,
+                                "name": "_agrupadores",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 368,
+                                "src": "246:12:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                                  "typeString": "uint8[] memory"
+                                }
+                              },
+                              "id": 385,
+                              "indexExpression": {
+                                "argumentTypes": null,
+                                "id": 384,
+                                "name": "x",
+                                "nodeType": "Identifier",
+                                "overloadedDeclarations": [],
+                                "referencedDeclaration": 372,
+                                "src": "259:1:2",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_uint256",
+                                  "typeString": "uint256"
+                                }
+                              },
+                              "isConstant": false,
+                              "isLValue": true,
+                              "isPure": false,
+                              "lValueRequested": false,
+                              "nodeType": "IndexAccess",
+                              "src": "246:15:2",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint8",
+                                "typeString": "uint8"
+                              }
+                            },
+                            "isConstant": false,
+                            "isLValue": true,
+                            "isPure": false,
+                            "lValueRequested": true,
+                            "nodeType": "IndexAccess",
+                            "src": "236:26:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "argumentTypes": null,
+                            "hexValue": "74727565",
+                            "id": 387,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "265:4:2",
+                            "subdenomination": null,
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "236:33:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 389,
+                        "nodeType": "ExpressionStatement",
+                        "src": "236:33:2"
+                      }
+                    ]
+                  },
+                  "condition": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 378,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 375,
+                      "name": "x",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 372,
+                      "src": "191:1:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 376,
+                        "name": "_agrupadores",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 368,
+                        "src": "195:12:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                          "typeString": "uint8[] memory"
+                        }
+                      },
+                      "id": 377,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "length",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "195:19:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "191:23:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 391,
+                  "initializationExpression": {
+                    "assignments": [
+                      372
+                    ],
+                    "declarations": [
+                      {
+                        "constant": false,
+                        "id": 372,
+                        "name": "x",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 393,
+                        "src": "179:6:2",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 371,
+                          "name": "uint",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "179:4:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                      }
+                    ],
+                    "id": 374,
+                    "initialValue": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 373,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "188:1:2",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "nodeType": "VariableDeclarationStatement",
+                    "src": "179:10:2"
+                  },
+                  "loopExpression": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 380,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "UnaryOperation",
+                      "operator": "++",
+                      "prefix": false,
+                      "src": "216:3:2",
+                      "subExpression": {
+                        "argumentTypes": null,
+                        "id": 379,
+                        "name": "x",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 372,
+                        "src": "216:1:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 381,
+                    "nodeType": "ExpressionStatement",
+                    "src": "216:3:2"
+                  },
+                  "nodeType": "ForStatement",
+                  "src": "174:107:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 393,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "registrarCoberturas",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 369,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 368,
+                  "name": "_agrupadores",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 393,
+                  "src": "134:20:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
+                    "typeString": "uint8[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 366,
+                      "name": "uint8",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "134:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "id": 367,
+                    "length": null,
+                    "nodeType": "ArrayTypeName",
+                    "src": "134:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
+                      "typeString": "uint8[]"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "133:22:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 370,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "163:0:2"
+            },
+            "scope": 420,
+            "src": "105:183:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 406,
+              "nodeType": "Block",
+              "src": "374:59:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 404,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 400,
+                        "name": "cobertura",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 365,
+                        "src": "385:9:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                          "typeString": "mapping(uint8 => bool)"
+                        }
+                      },
+                      "id": 402,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 401,
+                        "name": "_agrupador",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 395,
+                        "src": "395:10:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint8",
+                          "typeString": "uint8"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "385:21:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 403,
+                      "name": "_possuiCobertura",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 397,
+                      "src": "409:16:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "src": "385:40:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 405,
+                  "nodeType": "ExpressionStatement",
+                  "src": "385:40:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 407,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "alterarCobertura",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 398,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 395,
+                  "name": "_agrupador",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 407,
+                  "src": "326:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 394,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 397,
+                  "name": "_possuiCobertura",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 407,
+                  "src": "344:21:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 396,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "344:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "325:41:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 399,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "374:0:2"
+            },
+            "scope": 420,
+            "src": "300:133:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 418,
+              "nodeType": "Block",
+              "src": "515:47:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 414,
+                      "name": "cobertura",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 365,
+                      "src": "533:9:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
+                        "typeString": "mapping(uint8 => bool)"
+                      }
+                    },
+                    "id": 416,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 415,
+                      "name": "_agrupador",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 409,
+                      "src": "543:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint8",
+                        "typeString": "uint8"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "533:21:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "functionReturnParameters": 413,
+                  "id": 417,
+                  "nodeType": "Return",
+                  "src": "526:28:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 419,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "possuiCobertura",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 410,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 409,
+                  "name": "_agrupador",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 419,
+                  "src": "470:16:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 408,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "470:5:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "469:18:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 413,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 412,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 419,
+                  "src": "509:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 411,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "509:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "508:6:2"
+            },
+            "scope": 420,
+            "src": "445:117:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 421,
+        "src": "28:537:2"
+      }
+    ],
+    "src": "0:565:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-07T18:57:03.336Z"
+}
