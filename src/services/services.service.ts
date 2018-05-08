@@ -19,4 +19,40 @@ export class ServicosService {
   constructor(private web3Service: Web3Service) { 
     this.Servicos.setProvider(web3Service.web3.currentProvider);
   }
+
+  registrarServico(codigoTUSS: string, nome: string, valor: number, agrupador: number) {
+    let meta;
+
+    this.Servicos
+        .deployed()
+        .then(instance => {
+          meta = instance;
+          return meta.registrarServico.call(codigoTUSS, nome, valor, agrupador, {from: environment.carteiraOperadora});
+        })
+        .then(() => {
+        })
+        .catch(e => {
+          console.log(e);
+        });
+  }
+
+  consultarServico(codigoTUSS: string): Observable<any> {
+    let meta;
+
+    return Observable.create(observer => {
+      this.Servicos
+        .deployed()
+        .then(instance => {
+          meta = instance;
+          return meta.consultarServico.call(codigoTUSS, {from: environment.carteiraOperadora});
+        })
+        .then(() => {
+          observer.next();
+          observer.next();
+        })
+        .catch(e => {
+          console.log(e);
+        });
+    });
+  }
 }
