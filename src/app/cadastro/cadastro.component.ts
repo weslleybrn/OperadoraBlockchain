@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Beneficiario } from '../../services/contratos.service';
+import { Beneficiario, ContratosService } from '../../services/contratos.service';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-cadastro',
@@ -12,7 +13,8 @@ export class CadastroComponent implements OnInit {
   beneficiario: Beneficiario;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private contratos: ContratosService
   ) {  }
 
   ngOnInit() {
@@ -39,5 +41,14 @@ export class CadastroComponent implements OnInit {
       '0x1Dc8f94107B0Dc7Be5738886d803b42Ef843f1eC',
       '+55(27) 99912-3456',
       100);
+  }
+
+  cadastrar(): void {
+    this.contratos.adicionarContrato(1, "Plano Single Flex", environment.carteiraOperadora)
+    .subscribe(s => console.log(s));
+    console.log(environment.carteiraOperadora);
+
+    this.contratos.adicionarBeneficiario(1, environment.carteiraAlice, "ALICE DE SOUZA", "008012234", environment.carteiraOperadora);
+    console.log('adicionandoBeneficiario...');
   }
 }

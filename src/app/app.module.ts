@@ -23,22 +23,18 @@ import {
 } from '@angular/material';
 
 import {
-  OperadoraService,
-  Web3Service,
   ContratosService,
-  ServicosService
-} from '../services/services.service';
+} from '../services/contratos.service';
 
 import { AppComponent } from './app.component';
 import { WizzardComponent } from './wizzard/wizzard.component';
 import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { Web3Service } from '../services/web3.service';
 
 const SERVICES = [
-  OperadoraService,
   Web3Service,
   ContratosService,
-  ServicosService
 ];
 
 @NgModule({

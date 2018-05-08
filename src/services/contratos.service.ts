@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { fromPromise } from 'rxjs/internal/observable/fromPromise';
 import { Web3Service } from './web3.service';
+import { environment } from '../environments/environment';
 
 export class Beneficiario {
   constructor(
@@ -30,6 +31,7 @@ const contract = require('truffle-contract');
 @Injectable({
   providedIn: 'root'
 })
+
 export class ContratosService {
 
   Contratos = contract(contratosArtifacts);
@@ -38,7 +40,7 @@ export class ContratosService {
     this.Contratos.setProvider(web3Service.web3.currentProvider);
   }
 
-  adicionarContrato(codigoContrato: number, nomeContrato: string, account: any): Observable<number> {
+  adicionarContrato(codigoContrato: number, nomeContrato: string, account: any): Observable<any> {
     let meta;
 
     return Observable.create(observer => {
@@ -46,7 +48,7 @@ export class ContratosService {
         .deployed()
         .then(instance => {
           meta = instance;
-          return meta.adicionarContrato(codigoContrato, nomeContrato, "");
+          return meta.adicionarContrato.call(codigoContrato, nomeContrato, "", {from: account});
         })
         .then(() => {
           observer.next();
@@ -57,5 +59,33 @@ export class ContratosService {
           observer.error(e);
         });
     });
+  }
+
+  adicionarBeneficiario(codigoContrato: number, enderecoCliente: any, nome: string, carteirinha: string, account: any) {
+    let meta;
+
+    this.Contratos
+        .deployed()
+        .then(instance => {
+          meta = instance;
+          return meta.adicionarBeneficiario.call(codigoContrato, enderecoCliente, nome, carteirinha, {from: account});
+        })
+        .catch(e => {
+          console.log(e);
+        });
+  }
+
+  receberPagamento(codigoContrato: number, account: any, valor: number) {
+    let meta;
+
+    this.Contratos
+        .deployed()
+        .then(instance => {
+          meta = instance;
+          return meta.receberPagamento.call(codigoContrato, {from: account, value: valor});
+        })
+        .catch(e => {
+          console.log(e);
+        });
   }
 }

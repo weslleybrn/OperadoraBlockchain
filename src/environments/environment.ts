@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  httpProvider : 'http://localhost:7545'
+  httpProvider : 'http://localhost:7545',
+  carteiraAlice: '0xd8FE6D28c7Cf7A4C4CDd16969D4aaD839B4De57E'
+  carteiraOperadora: '0xaE1c43e5e00D42d41A6C08Fbaae90A750c3D41d1'
 };
 
 /*
