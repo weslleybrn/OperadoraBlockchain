@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   httpProvider : 'http://localhost:7545',
-  carteiraAlice: '0xd8FE6D28c7Cf7A4C4CDd16969D4aaD839B4De57E',
-  carteiraOperadora: '0xaE1c43e5e00D42d41A6C08Fbaae90A750c3D41d1'
+  carteiraAlice: '0x1Dc8f94107B0Dc7Be5738886d803b42Ef843f1eC',
+  carteiraOperadora: '0x614AA5941787042136B6Df49aA903413a3Fa2a08'
 };
 
 /*

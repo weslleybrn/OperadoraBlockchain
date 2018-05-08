@@ -59,39 +59,58 @@ export class ContratosService {
     this.Contratos.setProvider(web3Service.web3.currentProvider);
   }
 
-  adicionarContrato(codigoContrato: number, nomeContrato: string, account: any): Observable<any> {
-    let meta;
+  async adicionarContrato(codigoContrato: number, nomeContrato: string, account: any) {
+    try {
+      const deployed = await this.Contratos.deployed();
+      const transaction = await deployed
+      .adicionarContrato
+      .sendTransaction(codigoContrato, nomeContrato, '', {from: account});
 
-    return Observable.create(observer => {
-      this.Contratos
-        .deployed()
-        .then(instance => {
-          meta = instance;
-          return meta.adicionarContrato.call(codigoContrato, nomeContrato, "", {from: account});
-        })
-        .then(() => {
-          observer.next();
-          observer.next();
-        })
-        .catch(e => {
-          console.log(e);
-          observer.error(e);
-        });
-    });
+      if (!transaction) {
+        console.log('Transaction failed!');
+      } else {
+        console.log('Transaction complete!');
+      }
+    } catch (e) {
+      console.log(e);
+      console.log('Error sending coin; see log.');
+    }
   }
 
-  adicionarBeneficiario(codigoContrato: number, enderecoCliente: any, nome: string, carteirinha: string, account: any) {
-    let meta;
+  async adicionarBeneficiario(codigoContrato: number, enderecoCliente: any, nome: string, carteirinha: string, account: any) {
+    try {
+      const deployed = await this.Contratos.deployed();
+      const transaction = await deployed
+      .adicionarBeneficiario
+      .sendTransaction(codigoContrato, enderecoCliente, nome, carteirinha, {from: account});
 
-    this.Contratos
-        .deployed()
-        .then(instance => {
-          meta = instance;
-          return meta.adicionarBeneficiario.call(codigoContrato, enderecoCliente, nome, carteirinha, {from: account});
-        })
-        .catch(e => {
-          console.log(e);
-        });
+      if (!transaction) {
+        console.log('Transaction failed!');
+      } else {
+        console.log('Transaction complete!');
+      }
+    } catch (e) {
+      console.log(e);
+      console.log('Error sending coin; see log.');
+    }
+  }
+
+  async verificarBeneficiario(codigoContrato: number, enderecoCliente: any) {
+    try {
+      const deployed = await this.Contratos.deployed();
+      const transaction = await deployed
+      .verificarBeneficiario
+      .sendTransaction(codigoContrato, enderecoCliente);
+
+      if (!transaction) {
+        console.log('Transaction failed!');
+      } else {
+        console.log('Transaction complete!');
+      }
+    } catch (e) {
+      console.log(e);
+      console.log('Error sending coin; see log.');
+    }
   }
 
   receberPagamento(codigoContrato: number, account: any, valor: number) {

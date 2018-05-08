@@ -41,12 +41,12 @@ export class CadastroComponent implements OnInit {
       });
   }
 
-  cadastrar(): void {
-    this.contratoService.adicionarContrato(1, "Plano Single Flex", environment.carteiraOperadora)
-    .subscribe(s => console.log(s));
-    console.log(environment.carteiraOperadora);
+  async cadastrar() {
+    await this.contratoService.adicionarContrato(1, 'Plano Single Flex', environment.carteiraOperadora);
 
-    this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice, "ALICE DE SOUZA", "008012234", environment.carteiraOperadora);
-    console.log('adicionandoBeneficiario...');
+    await this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice,
+      'ALICE DE SOUZA', '008012234', environment.carteiraOperadora);
+
+    await this.contratoService.verificarBeneficiario(1, environment.carteiraAlice);
   }
 }
