@@ -14,7 +14,7 @@ export class CadastroComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private contratos: ContratosService
+    private contratoService: ContratosService
   ) {  }
 
   ngOnInit() {
@@ -34,21 +34,19 @@ export class CadastroComponent implements OnInit {
   }
 
   load(): any {
-    this.beneficiario = new Beneficiario(
-      'ALICE',
-      'de Souza',
-      25,
-      '0x1Dc8f94107B0Dc7Be5738886d803b42Ef843f1eC',
-      '+55(27) 99912-3456',
-      100);
+    this.contratoService
+      .getBeneficiario()
+      .subscribe(beneficiario => {
+        this.beneficiario = beneficiario;
+      });
   }
 
   cadastrar(): void {
-    this.contratos.adicionarContrato(1, "Plano Single Flex", environment.carteiraOperadora)
+    this.contratoService.adicionarContrato(1, "Plano Single Flex", environment.carteiraOperadora)
     .subscribe(s => console.log(s));
     console.log(environment.carteiraOperadora);
 
-    this.contratos.adicionarBeneficiario(1, environment.carteiraAlice, "ALICE DE SOUZA", "008012234", environment.carteiraOperadora);
+    this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice, "ALICE DE SOUZA", "008012234", environment.carteiraOperadora);
     console.log('adicionandoBeneficiario...');
   }
 }
