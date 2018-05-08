@@ -1,0 +1,32 @@
+<form [formGroup]="form" novalidate>
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="mat-card-title-custom">{{this.beneficiario.nome}} {{this.beneficiario.sobreNome}}</mat-card-title>
+      <mat-card-subtitle>{{this.beneficiario.idade}} anos</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-form-field class="example-full-width">
+        <input matInput class="text-align-rigth" placeholder="SALDO" formControlName="saldo" ([ngModel])="this.beneficiario.saldo" readonly>
+        <span matSuffix>.00</span>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="TELEFONE" formControlName="telefone" ([ngModel])="this.beneficiario.telefone" readonly>
+      </mat-form-field>  
+      <mat-form-field class="example-full-width">
+        <input matInput placeholder="ID ETHEREUM" formControlName="hash" ([ngModel])="this.beneficiario.hash" readonly>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+  <div class="separator"></div>
+  <mat-card class="mat-card-custom">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image-carro"></div>
+      <mat-card-title class="mat-card-title-custom">Contratos</mat-card-title>
+      <mat-card-subtitle>Seguro veicular</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+  <div class="button-row">
+      <button mat-raised-button color="primary">CADASTRAR</button>
+  </div>
+</form>

@@ -1,8 +1,11 @@
 <div class="iphone">
   <div class="screen">
+    <div class="screen-topo">
+      
+    </div>
     <router-outlet></router-outlet>
   </div>
-  <button class="home" title="Home"></button>
+  <button class="home" title="Home" [routerLink]="['/']" ></button>
   <span class="speaker" title="Speaker"></span>
   <span class="camera" title="Camera"></span>
   <span class="proximity" title="Proximity Sensor"></span>

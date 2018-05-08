@@ -57,6 +57,7 @@ export class WizzardComponent implements OnInit {
     this.model.beneficiario = new Beneficiario(
       'ALICE',
       'de Souza',
+      25,
       '0x1Dc8f94107B0Dc7Be5738886d803b42Ef843f1eC',
       '+55(27) 99912-3456',
       100);

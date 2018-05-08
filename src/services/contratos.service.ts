@@ -7,6 +7,7 @@ export class Beneficiario {
   constructor(
     public nome: string,
     public sobreNome: string,
+    public idade: number,
     public hash: string,
     public telefone: string,
     public saldo: number
