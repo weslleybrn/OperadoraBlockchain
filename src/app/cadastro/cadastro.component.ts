@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Beneficiario } from '../../services/contratos.service';
+import { Beneficiario, ContratosService } from '../../services/contratos.service';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
 @Component({
@@ -12,7 +12,8 @@ export class CadastroComponent implements OnInit {
   beneficiario: Beneficiario;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private contratoService: ContratosService
   ) {  }
 
   ngOnInit() {
@@ -32,12 +33,10 @@ export class CadastroComponent implements OnInit {
   }
 
   load(): any {
-    this.beneficiario = new Beneficiario(
-      'ALICE',
-      'de Souza',
-      25,
-      '0x1Dc8f94107B0Dc7Be5738886d803b42Ef843f1eC',
-      '+55(27) 99912-3456',
-      100);
+    this.contratoService
+      .getBeneficiario()
+      .subscribe(beneficiario => {
+        this.beneficiario = beneficiario;
+      });
   }
 }

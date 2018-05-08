@@ -19,7 +19,10 @@ import {
   MatButtonToggleGroup,
   MatSelect,
   MatSelectModule,
-  MatListModule
+  MatListModule,
+  MatGridListModule,
+  MatSliderModule,
+  MatStepper
 } from '@angular/material';
 
 import {
@@ -33,6 +36,7 @@ import { AppComponent } from './app.component';
 import { WizzardComponent } from './wizzard/wizzard.component';
 import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { AdesaoComponent } from './adesao/adesao.component';
 
 const SERVICES = [
   OperadoraService,
@@ -46,7 +50,8 @@ const SERVICES = [
     AppComponent,
     WizzardComponent,
     HomeComponent,
-    CadastroComponent
+    CadastroComponent,
+    AdesaoComponent
   ],
   imports: [
     NgbModule.forRoot(),
@@ -63,7 +68,8 @@ const SERVICES = [
     MatCardModule,
     MatButtonToggleModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   exports: [
     FormsModule,
@@ -75,7 +81,8 @@ const SERVICES = [
     MatCardModule,
     MatButtonToggleModule,
     MatSelectModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule
   ],
   providers: [SERVICES],
   bootstrap: [AppComponent],
