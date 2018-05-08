@@ -64,7 +64,11 @@ export class ContratosService {
       const deployed = await this.Contratos.deployed();
       const transaction = await deployed
       .adicionarContrato
-      .sendTransaction(codigoContrato, nomeContrato, '', {from: account});
+      .sendTransaction(codigoContrato, nomeContrato, '',
+      {
+        from: account,
+        gas: 1000000
+      });
 
       if (!transaction) {
         console.log('Transaction failed!');
@@ -82,7 +86,11 @@ export class ContratosService {
       const deployed = await this.Contratos.deployed();
       const transaction = await deployed
       .adicionarBeneficiario
-      .sendTransaction(codigoContrato, enderecoCliente, nome, carteirinha, {from: account});
+      .sendTransaction(codigoContrato, enderecoCliente, nome, carteirinha,
+        {
+          from: account,
+          gas: 1000000
+        });
 
       if (!transaction) {
         console.log('Transaction failed!');
@@ -95,18 +103,26 @@ export class ContratosService {
     }
   }
 
-  async verificarBeneficiario(codigoContrato: number, enderecoCliente: any) {
+  async verificarBeneficiario(codigoContrato: number, enderecoCliente: any, account: any) {
     try {
       const deployed = await this.Contratos.deployed();
-      const transaction = await deployed
+      return deployed
       .verificarBeneficiario
-      .sendTransaction(codigoContrato, enderecoCliente);
+      .call(codigoContrato, enderecoCliente,
+      {
+        from: account,
+        gas: 1000000
+      })
+      .then(s => {
+        console.log(s);
+        return s;
+      });
 
-      if (!transaction) {
-        console.log('Transaction failed!');
-      } else {
-        console.log('Transaction complete!');
-      }
+    //   if (!transaction) {
+    //     console.log('Transaction failed!');
+    //   } else {
+    //     console.log('Transaction complete!');
+    //   }
     } catch (e) {
       console.log(e);
       console.log('Error sending coin; see log.');

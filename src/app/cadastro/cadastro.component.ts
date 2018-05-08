@@ -47,6 +47,6 @@ export class CadastroComponent implements OnInit {
     await this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice,
       'ALICE DE SOUZA', '008012234', environment.carteiraOperadora);
 
-    await this.contratoService.verificarBeneficiario(1, environment.carteiraAlice);
+    await this.contratoService.verificarBeneficiario(1, environment.carteiraAlice, environment.carteiraAlice);
   }
 }
