@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Web3Service } from '../../services/web3.service';
-import { OperadoraService } from '../../services/services.service';
 import { Servico, ServicosService } from '../../services/servicos.service';
 import { Beneficiario, Contrato, ContratosService } from '../../services/contratos.service';
 
@@ -26,7 +25,6 @@ export class WizzardComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private web3Service: Web3Service,
-    private operadoraService: OperadoraService,
     public servicosService: ServicosService,
     public contratosService: ContratosService
   ) { }

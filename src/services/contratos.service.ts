@@ -2,11 +2,8 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { fromPromise } from 'rxjs/internal/observable/fromPromise';
 import { Web3Service } from './web3.service';
-<<<<<<< HEAD
 import { environment } from '../environments/environment';
-=======
 import { of } from 'rxjs/internal/observable/of';
->>>>>>> 352471fd7bcb7f6faa797044d0c3a263f7020de9
 
 export class Beneficiario {
   constructor(
@@ -70,11 +67,7 @@ export class ContratosService {
         .deployed()
         .then(instance => {
           meta = instance;
-<<<<<<< HEAD
           return meta.adicionarContrato.call(codigoContrato, nomeContrato, "", {from: account});
-=======
-          return meta.adicionarContrato(codigoContrato, nomeContrato, '');
->>>>>>> 352471fd7bcb7f6faa797044d0c3a263f7020de9
         })
         .then(() => {
           observer.next();
@@ -87,7 +80,6 @@ export class ContratosService {
     });
   }
 
-<<<<<<< HEAD
   adicionarBeneficiario(codigoContrato: number, enderecoCliente: any, nome: string, carteirinha: string, account: any) {
     let meta;
 
@@ -114,13 +106,13 @@ export class ContratosService {
         .catch(e => {
           console.log(e);
         });
-=======
+  }
+
   getBeneficiario(): Observable<Beneficiario> {
     return this.$beneficiario;
   }
 
   getContrato(): Observable<Contrato> {
     return this.$contrato;
->>>>>>> 352471fd7bcb7f6faa797044d0c3a263f7020de9
   }
 }
