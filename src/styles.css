@@ -6,6 +6,7 @@
     --athens-gray: #f7f8fa;
     --shuttle-gray: #525c6b;
     --indigo: #3f74ca;
+    --blue: #3A7CA8;
 }
 
 html, body {
@@ -31,14 +32,26 @@ html, body {
   }
 
   .screen {
-    background-color: var(--indigo);
+    /* background-color: var(--indigo); */
     /* display: flex;
     flex-wrap: wrap; */
     padding: 1.5vh;
-    width: 36vh;
-    background: linear-gradient(to top, lighten(var(--indigo), 8%) 11.5vh, var(--indigo) 11.5vh);
-    /* height: 60vh; */
-    cursor: pointer !important;
+    width: 40vh;
+    /* background: linear-gradient(to top, var(--blue), var(--indigo)); */
+    background-image: url('assets/imgs/backgroud.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    min-height: 60vh;
+  }
+
+  .screen-topo {
+    height: 30px;
+    background-color: #fff;
+    background-image: url('assets/imgs/logo.png');
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    margin-bottom: 4px;
+    padding: 6px;
   }
   
   .icon {
@@ -238,4 +251,9 @@ div.mat-step-label.mat-step-label-active.mat-step-label-selected
   top: 50px;
   font-size: 45%;
   left: 25px;
+}
+
+.mat-card-title-custom {
+  text-transform: uppercase;
+  margin-bottom: 4px !important;
 }

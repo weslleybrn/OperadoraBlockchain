@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Web3Service } from '../services/web3.service';
+import { Router, RouterModule, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,10 @@ import { Web3Service } from '../services/web3.service';
 export class AppComponent {
   title = 'app';
 
-  constructor(private web3Service: Web3Service) {
+  constructor(
+    private web3Service: Web3Service,
+    private router: Router,
+    private route: ActivatedRoute) {
     this.testeWeb3();
   }
 
