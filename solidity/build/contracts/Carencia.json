@@ -61,22 +61,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632797afa21461005c578063567584ff146100a4578063a08c0bca1461010a575b600080fd5b34801561006857600080fd5b5061008a600480360381019080803560ff169060200190929190505050610146565b604051808215151515815260200191505060405180910390f35b3480156100b057600080fd5b5061010860048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610175565b005b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b60008090505b81518110156101d9576001600080848481518110151561019757fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061017b565b5050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a72305820674b50da588cd280cf22653bc105bd0a30e7dac627226b0854bb122c94ff2c6b0029",
   "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632797afa21461005c578063567584ff146100a4578063a08c0bca1461010a575b600080fd5b34801561006857600080fd5b5061008a600480360381019080803560ff169060200190929190505050610146565b604051808215151515815260200191505060405180910390f35b3480156100b057600080fd5b5061010860048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610175565b005b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b60008090505b81518110156101d9576001600080848481518110151561019757fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061017b565b5050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a72305820674b50da588cd280cf22653bc105bd0a30e7dac627226b0854bb122c94ff2c6b0029",
-  "sourceMap": "28:550:1:-;;;59:23;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:23:1;28:550;;;;;;",
-  "deployedSourceMap": "28:550:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:115;;8:9:-1;5:2;;;30:1;27;20:12;5:2;460:115:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;134:181;;8:9:-1;5:2;;;30:1;27;20:12;5:2;134:181:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;327:121;;8:9:-1;5:2;;;30:1;27;20:12;5:2;327:121:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:115;523:4;547:8;:20;556:10;547:20;;;;;;;;;;;;;;;;;;;;;;;;;540:27;;460:115;;;:::o;134:181::-;207:6;216:1;207:10;;202:106;223:12;:19;219:1;:23;202:106;;;292:4;264:8;:25;273:12;286:1;273:15;;;;;;;;;;;;;;;;;;264:25;;;;;;;;;;;;;;;;:32;;;;;;;;;;;;;;;;;;244:3;;;;;;;202:106;;;134:181;;:::o;327:121::-;429:11;406:8;:20;415:10;406:20;;;;;;;;;;;;;;;;:34;;;;;;;;;;;;;;;;;;327:121;;:::o",
+  "sourceMap": "28:550:0:-;;;59:23;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:23:0;28:550;;;;;;",
+  "deployedSourceMap": "28:550:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:115;;8:9:-1;5:2;;;30:1;27;20:12;5:2;460:115:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;134:181;;8:9:-1;5:2;;;30:1;27;20:12;5:2;134:181:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;327:121;;8:9:-1;5:2;;;30:1;27;20:12;5:2;327:121:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;460:115;523:4;547:8;:20;556:10;547:20;;;;;;;;;;;;;;;;;;;;;;;;;540:27;;460:115;;;:::o;134:181::-;207:6;216:1;207:10;;202:106;223:12;:19;219:1;:23;202:106;;;292:4;264:8;:25;273:12;286:1;273:15;;;;;;;;;;;;;;;;;;264:25;;;;;;;;;;;;;;;;:32;;;;;;;;;;;;;;;;;;244:3;;;;;;;202:106;;;134:181;;:::o;327:121::-;429:11;406:8;:20;415:10;406:20;;;;;;;;;;;;;;;;:34;;;;;;;;;;;;;;;;;;327:121;;:::o",
   "source": "pragma solidity ^0.4.21;\r\n\r\ncontract Carencia {\r\n    \r\n    constructor() public {}\r\n\r\n    mapping(uint8 => bool) carencia;\r\n    \r\n    function registrarCarencias(uint8[] _agrupadores) public {\r\n        for (uint x = 0; x < _agrupadores.length; x++) {\r\n            carencia[_agrupadores[x]] = true;\r\n        }\r\n    }\r\n    \r\n    function alterarCarencia(uint8 _agrupador, bool _emCarencia) public {\r\n        carencia[_agrupador] = _emCarencia;\r\n    }\r\n    \r\n    function possuiCarencia(uint8 _agrupador) public view returns (bool) {\r\n        return carencia[_agrupador];\r\n    }\r\n}",
   "sourcePath": "C:\\DEVBC\\OperadoraBlockchain\\solidity\\contracts\\Carencia.sol",
   "ast": {
     "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Carencia.sol",
     "exportedSymbols": {
       "Carencia": [
-        359
+        64
       ]
     },
-    "id": 360,
+    "id": 65,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 296,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -84,7 +84,7 @@
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "baseContracts": [],
@@ -92,22 +92,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 359,
+        "id": 64,
         "linearizedBaseContracts": [
-          359
+          64
         ],
         "name": "Carencia",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 299,
+              "id": 4,
               "nodeType": "Block",
-              "src": "80:2:1",
+              "src": "80:2:0",
               "statements": []
             },
             "documentation": null,
-            "id": 300,
+            "id": 5,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -115,31 +115,31 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 297,
+              "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "70:2:1"
+              "src": "70:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 298,
+              "id": 3,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "80:0:1"
+              "src": "80:0:0"
             },
-            "scope": 359,
-            "src": "59:23:1",
+            "scope": 64,
+            "src": "59:23:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 304,
+            "id": 9,
             "name": "carencia",
             "nodeType": "VariableDeclaration",
-            "scope": 359,
-            "src": "90:31:1",
+            "scope": 64,
+            "src": "90:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -147,28 +147,28 @@
               "typeString": "mapping(uint8 => bool)"
             },
             "typeName": {
-              "id": 303,
+              "id": 8,
               "keyType": {
-                "id": 301,
+                "id": 6,
                 "name": "uint8",
                 "nodeType": "ElementaryTypeName",
-                "src": "98:5:1",
+                "src": "98:5:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint8",
                   "typeString": "uint8"
                 }
               },
               "nodeType": "Mapping",
-              "src": "90:22:1",
+              "src": "90:22:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                 "typeString": "mapping(uint8 => bool)"
               },
               "valueType": {
-                "id": 302,
+                "id": 7,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "107:4:1",
+                "src": "107:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -180,20 +180,20 @@
           },
           {
             "body": {
-              "id": 331,
+              "id": 36,
               "nodeType": "Block",
-              "src": "191:124:1",
+              "src": "191:124:0",
               "statements": [
                 {
                   "body": {
-                    "id": 329,
+                    "id": 34,
                     "nodeType": "Block",
-                    "src": "249:59:1",
+                    "src": "249:59:0",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 327,
+                          "id": 32,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -202,42 +202,42 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 321,
+                              "id": 26,
                               "name": "carencia",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 304,
-                              "src": "264:8:1",
+                              "referencedDeclaration": 9,
+                              "src": "264:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                                 "typeString": "mapping(uint8 => bool)"
                               }
                             },
-                            "id": 325,
+                            "id": 30,
                             "indexExpression": {
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 322,
+                                "id": 27,
                                 "name": "_agrupadores",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 307,
-                                "src": "273:12:1",
+                                "referencedDeclaration": 12,
+                                "src": "273:12:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                                   "typeString": "uint8[] memory"
                                 }
                               },
-                              "id": 324,
+                              "id": 29,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 323,
+                                "id": 28,
                                 "name": "x",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 311,
-                                "src": "286:1:1",
+                                "referencedDeclaration": 16,
+                                "src": "286:1:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -248,7 +248,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "273:15:1",
+                              "src": "273:15:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
                                 "typeString": "uint8"
@@ -259,7 +259,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "264:25:1",
+                            "src": "264:25:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -270,14 +270,14 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "74727565",
-                            "id": 326,
+                            "id": 31,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "292:4:1",
+                            "src": "292:4:0",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -285,15 +285,15 @@
                             },
                             "value": "true"
                           },
-                          "src": "264:32:1",
+                          "src": "264:32:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 328,
+                        "id": 33,
                         "nodeType": "ExpressionStatement",
-                        "src": "264:32:1"
+                        "src": "264:32:0"
                       }
                     ]
                   },
@@ -303,19 +303,19 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 317,
+                    "id": 22,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 314,
+                      "id": 19,
                       "name": "x",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 311,
-                      "src": "219:1:1",
+                      "referencedDeclaration": 16,
+                      "src": "219:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -327,18 +327,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 315,
+                        "id": 20,
                         "name": "_agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 307,
-                        "src": "223:12:1",
+                        "referencedDeclaration": 12,
+                        "src": "223:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 316,
+                      "id": 21,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -346,31 +346,31 @@
                       "memberName": "length",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "223:19:1",
+                      "src": "223:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "219:23:1",
+                    "src": "219:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 330,
+                  "id": 35,
                   "initializationExpression": {
                     "assignments": [
-                      311
+                      16
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 311,
+                        "id": 16,
                         "name": "x",
                         "nodeType": "VariableDeclaration",
-                        "scope": 332,
-                        "src": "207:6:1",
+                        "scope": 37,
+                        "src": "207:6:0",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -378,10 +378,10 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 310,
+                          "id": 15,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
-                          "src": "207:4:1",
+                          "src": "207:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -391,18 +391,18 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 313,
+                    "id": 18,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 312,
+                      "id": 17,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "216:1:1",
+                      "src": "216:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -411,12 +411,12 @@
                       "value": "0"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "207:10:1"
+                    "src": "207:10:0"
                   },
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 319,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -424,15 +424,15 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": false,
-                      "src": "244:3:1",
+                      "src": "244:3:0",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 318,
+                        "id": 23,
                         "name": "x",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 311,
-                        "src": "244:1:1",
+                        "referencedDeclaration": 16,
+                        "src": "244:1:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -443,17 +443,17 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 320,
+                    "id": 25,
                     "nodeType": "ExpressionStatement",
-                    "src": "244:3:1"
+                    "src": "244:3:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "202:106:1"
+                  "src": "202:106:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 332,
+            "id": 37,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -461,16 +461,16 @@
             "name": "registrarCarencias",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 308,
+              "id": 13,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 307,
+                  "id": 12,
                   "name": "_agrupadores",
                   "nodeType": "VariableDeclaration",
-                  "scope": 332,
-                  "src": "162:20:1",
+                  "scope": 37,
+                  "src": "162:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -479,19 +479,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 305,
+                      "id": 10,
                       "name": "uint8",
                       "nodeType": "ElementaryTypeName",
-                      "src": "162:5:1",
+                      "src": "162:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
                       }
                     },
-                    "id": 306,
+                    "id": 11,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "162:7:1",
+                    "src": "162:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
                       "typeString": "uint8[]"
@@ -501,31 +501,31 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "161:22:1"
+              "src": "161:22:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 309,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "191:0:1"
+              "src": "191:0:0"
             },
-            "scope": 359,
-            "src": "134:181:1",
+            "scope": 64,
+            "src": "134:181:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 345,
+              "id": 50,
               "nodeType": "Block",
-              "src": "395:53:1",
+              "src": "395:53:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 343,
+                    "id": 48,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -534,26 +534,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 339,
+                        "id": 44,
                         "name": "carencia",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 304,
-                        "src": "406:8:1",
+                        "referencedDeclaration": 9,
+                        "src": "406:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                           "typeString": "mapping(uint8 => bool)"
                         }
                       },
-                      "id": 341,
+                      "id": 46,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 340,
+                        "id": 45,
                         "name": "_agrupador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 334,
-                        "src": "415:10:1",
+                        "referencedDeclaration": 39,
+                        "src": "415:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
                           "typeString": "uint8"
@@ -564,7 +564,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "406:20:1",
+                      "src": "406:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -574,31 +574,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 342,
+                      "id": 47,
                       "name": "_emCarencia",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 336,
-                      "src": "429:11:1",
+                      "referencedDeclaration": 41,
+                      "src": "429:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "406:34:1",
+                    "src": "406:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 344,
+                  "id": 49,
                   "nodeType": "ExpressionStatement",
-                  "src": "406:34:1"
+                  "src": "406:34:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 346,
+            "id": 51,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -606,16 +606,16 @@
             "name": "alterarCarencia",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 337,
+              "id": 42,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 334,
+                  "id": 39,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
-                  "src": "352:16:1",
+                  "scope": 51,
+                  "src": "352:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -623,10 +623,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 333,
+                    "id": 38,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "352:5:1",
+                    "src": "352:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -637,11 +637,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 336,
+                  "id": 41,
                   "name": "_emCarencia",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
-                  "src": "370:16:1",
+                  "scope": 51,
+                  "src": "370:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -649,10 +649,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 335,
+                    "id": 40,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:4:1",
+                    "src": "370:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -662,52 +662,52 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "351:36:1"
+              "src": "351:36:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 338,
+              "id": 43,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "395:0:1"
+              "src": "395:0:0"
             },
-            "scope": 359,
-            "src": "327:121:1",
+            "scope": 64,
+            "src": "327:121:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 357,
+              "id": 62,
               "nodeType": "Block",
-              "src": "529:46:1",
+              "src": "529:46:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 353,
+                      "id": 58,
                       "name": "carencia",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 304,
-                      "src": "547:8:1",
+                      "referencedDeclaration": 9,
+                      "src": "547:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                         "typeString": "mapping(uint8 => bool)"
                       }
                     },
-                    "id": 355,
+                    "id": 60,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 354,
+                      "id": 59,
                       "name": "_agrupador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
-                      "src": "556:10:1",
+                      "referencedDeclaration": 53,
+                      "src": "556:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
@@ -718,21 +718,21 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "547:20:1",
+                    "src": "547:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 352,
-                  "id": 356,
+                  "functionReturnParameters": 57,
+                  "id": 61,
                   "nodeType": "Return",
-                  "src": "540:27:1"
+                  "src": "540:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 358,
+            "id": 63,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -740,16 +740,16 @@
             "name": "possuiCarencia",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 349,
+              "id": 54,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 53,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 358,
-                  "src": "484:16:1",
+                  "scope": 63,
+                  "src": "484:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -757,10 +757,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 347,
+                    "id": 52,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "484:5:1",
+                    "src": "484:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -770,20 +770,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "483:18:1"
+              "src": "483:18:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 352,
+              "id": 57,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 351,
+                  "id": 56,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 358,
-                  "src": "523:4:1",
+                  "scope": 63,
+                  "src": "523:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -791,10 +791,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 350,
+                    "id": 55,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "523:4:1",
+                    "src": "523:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -804,33 +804,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "522:6:1"
+              "src": "522:6:0"
             },
-            "scope": 359,
-            "src": "460:115:1",
+            "scope": 64,
+            "src": "460:115:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 360,
-        "src": "28:550:1"
+        "scope": 65,
+        "src": "28:550:0"
       }
     ],
-    "src": "0:578:1"
+    "src": "0:578:0"
   },
   "legacyAST": {
     "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Carencia.sol",
     "exportedSymbols": {
       "Carencia": [
-        359
+        64
       ]
     },
-    "id": 360,
+    "id": 65,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 296,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -838,7 +838,7 @@
           ".21"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "baseContracts": [],
@@ -846,22 +846,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 359,
+        "id": 64,
         "linearizedBaseContracts": [
-          359
+          64
         ],
         "name": "Carencia",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 299,
+              "id": 4,
               "nodeType": "Block",
-              "src": "80:2:1",
+              "src": "80:2:0",
               "statements": []
             },
             "documentation": null,
-            "id": 300,
+            "id": 5,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -869,31 +869,31 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 297,
+              "id": 2,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "70:2:1"
+              "src": "70:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 298,
+              "id": 3,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "80:0:1"
+              "src": "80:0:0"
             },
-            "scope": 359,
-            "src": "59:23:1",
+            "scope": 64,
+            "src": "59:23:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 304,
+            "id": 9,
             "name": "carencia",
             "nodeType": "VariableDeclaration",
-            "scope": 359,
-            "src": "90:31:1",
+            "scope": 64,
+            "src": "90:31:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -901,28 +901,28 @@
               "typeString": "mapping(uint8 => bool)"
             },
             "typeName": {
-              "id": 303,
+              "id": 8,
               "keyType": {
-                "id": 301,
+                "id": 6,
                 "name": "uint8",
                 "nodeType": "ElementaryTypeName",
-                "src": "98:5:1",
+                "src": "98:5:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_uint8",
                   "typeString": "uint8"
                 }
               },
               "nodeType": "Mapping",
-              "src": "90:22:1",
+              "src": "90:22:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                 "typeString": "mapping(uint8 => bool)"
               },
               "valueType": {
-                "id": 302,
+                "id": 7,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
-                "src": "107:4:1",
+                "src": "107:4:0",
                 "typeDescriptions": {
                   "typeIdentifier": "t_bool",
                   "typeString": "bool"
@@ -934,20 +934,20 @@
           },
           {
             "body": {
-              "id": 331,
+              "id": 36,
               "nodeType": "Block",
-              "src": "191:124:1",
+              "src": "191:124:0",
               "statements": [
                 {
                   "body": {
-                    "id": 329,
+                    "id": 34,
                     "nodeType": "Block",
-                    "src": "249:59:1",
+                    "src": "249:59:0",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 327,
+                          "id": 32,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -956,42 +956,42 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 321,
+                              "id": 26,
                               "name": "carencia",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 304,
-                              "src": "264:8:1",
+                              "referencedDeclaration": 9,
+                              "src": "264:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                                 "typeString": "mapping(uint8 => bool)"
                               }
                             },
-                            "id": 325,
+                            "id": 30,
                             "indexExpression": {
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 322,
+                                "id": 27,
                                 "name": "_agrupadores",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 307,
-                                "src": "273:12:1",
+                                "referencedDeclaration": 12,
+                                "src": "273:12:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                                   "typeString": "uint8[] memory"
                                 }
                               },
-                              "id": 324,
+                              "id": 29,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 323,
+                                "id": 28,
                                 "name": "x",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 311,
-                                "src": "286:1:1",
+                                "referencedDeclaration": 16,
+                                "src": "286:1:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
@@ -1002,7 +1002,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "273:15:1",
+                              "src": "273:15:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint8",
                                 "typeString": "uint8"
@@ -1013,7 +1013,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "264:25:1",
+                            "src": "264:25:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
                               "typeString": "bool"
@@ -1024,14 +1024,14 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "74727565",
-                            "id": 326,
+                            "id": 31,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "bool",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "292:4:1",
+                            "src": "292:4:0",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -1039,15 +1039,15 @@
                             },
                             "value": "true"
                           },
-                          "src": "264:32:1",
+                          "src": "264:32:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bool",
                             "typeString": "bool"
                           }
                         },
-                        "id": 328,
+                        "id": 33,
                         "nodeType": "ExpressionStatement",
-                        "src": "264:32:1"
+                        "src": "264:32:0"
                       }
                     ]
                   },
@@ -1057,19 +1057,19 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 317,
+                    "id": 22,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 314,
+                      "id": 19,
                       "name": "x",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 311,
-                      "src": "219:1:1",
+                      "referencedDeclaration": 16,
+                      "src": "219:1:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1081,18 +1081,18 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 315,
+                        "id": 20,
                         "name": "_agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 307,
-                        "src": "223:12:1",
+                        "referencedDeclaration": 12,
+                        "src": "223:12:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 316,
+                      "id": 21,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1100,31 +1100,31 @@
                       "memberName": "length",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "223:19:1",
+                      "src": "223:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "219:23:1",
+                    "src": "219:23:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 330,
+                  "id": 35,
                   "initializationExpression": {
                     "assignments": [
-                      311
+                      16
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 311,
+                        "id": 16,
                         "name": "x",
                         "nodeType": "VariableDeclaration",
-                        "scope": 332,
-                        "src": "207:6:1",
+                        "scope": 37,
+                        "src": "207:6:0",
                         "stateVariable": false,
                         "storageLocation": "default",
                         "typeDescriptions": {
@@ -1132,10 +1132,10 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 310,
+                          "id": 15,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
-                          "src": "207:4:1",
+                          "src": "207:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -1145,18 +1145,18 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 313,
+                    "id": 18,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 312,
+                      "id": 17,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "kind": "number",
                       "lValueRequested": false,
                       "nodeType": "Literal",
-                      "src": "216:1:1",
+                      "src": "216:1:0",
                       "subdenomination": null,
                       "typeDescriptions": {
                         "typeIdentifier": "t_rational_0_by_1",
@@ -1165,12 +1165,12 @@
                       "value": "0"
                     },
                     "nodeType": "VariableDeclarationStatement",
-                    "src": "207:10:1"
+                    "src": "207:10:0"
                   },
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 319,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1178,15 +1178,15 @@
                       "nodeType": "UnaryOperation",
                       "operator": "++",
                       "prefix": false,
-                      "src": "244:3:1",
+                      "src": "244:3:0",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 318,
+                        "id": 23,
                         "name": "x",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 311,
-                        "src": "244:1:1",
+                        "referencedDeclaration": 16,
+                        "src": "244:1:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1197,17 +1197,17 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 320,
+                    "id": 25,
                     "nodeType": "ExpressionStatement",
-                    "src": "244:3:1"
+                    "src": "244:3:0"
                   },
                   "nodeType": "ForStatement",
-                  "src": "202:106:1"
+                  "src": "202:106:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 332,
+            "id": 37,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1215,16 +1215,16 @@
             "name": "registrarCarencias",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 308,
+              "id": 13,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 307,
+                  "id": 12,
                   "name": "_agrupadores",
                   "nodeType": "VariableDeclaration",
-                  "scope": 332,
-                  "src": "162:20:1",
+                  "scope": 37,
+                  "src": "162:20:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1233,19 +1233,19 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 305,
+                      "id": 10,
                       "name": "uint8",
                       "nodeType": "ElementaryTypeName",
-                      "src": "162:5:1",
+                      "src": "162:5:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
                       }
                     },
-                    "id": 306,
+                    "id": 11,
                     "length": null,
                     "nodeType": "ArrayTypeName",
-                    "src": "162:7:1",
+                    "src": "162:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint8_$dyn_storage_ptr",
                       "typeString": "uint8[]"
@@ -1255,31 +1255,31 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "161:22:1"
+              "src": "161:22:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 309,
+              "id": 14,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "191:0:1"
+              "src": "191:0:0"
             },
-            "scope": 359,
-            "src": "134:181:1",
+            "scope": 64,
+            "src": "134:181:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 345,
+              "id": 50,
               "nodeType": "Block",
-              "src": "395:53:1",
+              "src": "395:53:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 343,
+                    "id": 48,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1288,26 +1288,26 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 339,
+                        "id": 44,
                         "name": "carencia",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 304,
-                        "src": "406:8:1",
+                        "referencedDeclaration": 9,
+                        "src": "406:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                           "typeString": "mapping(uint8 => bool)"
                         }
                       },
-                      "id": 341,
+                      "id": 46,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 340,
+                        "id": 45,
                         "name": "_agrupador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 334,
-                        "src": "415:10:1",
+                        "referencedDeclaration": 39,
+                        "src": "415:10:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
                           "typeString": "uint8"
@@ -1318,7 +1318,7 @@
                       "isPure": false,
                       "lValueRequested": true,
                       "nodeType": "IndexAccess",
-                      "src": "406:20:1",
+                      "src": "406:20:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
@@ -1328,31 +1328,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 342,
+                      "id": 47,
                       "name": "_emCarencia",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 336,
-                      "src": "429:11:1",
+                      "referencedDeclaration": 41,
+                      "src": "429:11:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       }
                     },
-                    "src": "406:34:1",
+                    "src": "406:34:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "id": 344,
+                  "id": 49,
                   "nodeType": "ExpressionStatement",
-                  "src": "406:34:1"
+                  "src": "406:34:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 346,
+            "id": 51,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1360,16 +1360,16 @@
             "name": "alterarCarencia",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 337,
+              "id": 42,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 334,
+                  "id": 39,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
-                  "src": "352:16:1",
+                  "scope": 51,
+                  "src": "352:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1377,10 +1377,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 333,
+                    "id": 38,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "352:5:1",
+                    "src": "352:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -1391,11 +1391,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 336,
+                  "id": 41,
                   "name": "_emCarencia",
                   "nodeType": "VariableDeclaration",
-                  "scope": 346,
-                  "src": "370:16:1",
+                  "scope": 51,
+                  "src": "370:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1403,10 +1403,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 335,
+                    "id": 40,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "370:4:1",
+                    "src": "370:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1416,52 +1416,52 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "351:36:1"
+              "src": "351:36:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 338,
+              "id": 43,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "395:0:1"
+              "src": "395:0:0"
             },
-            "scope": 359,
-            "src": "327:121:1",
+            "scope": 64,
+            "src": "327:121:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 357,
+              "id": 62,
               "nodeType": "Block",
-              "src": "529:46:1",
+              "src": "529:46:0",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 353,
+                      "id": 58,
                       "name": "carencia",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 304,
-                      "src": "547:8:1",
+                      "referencedDeclaration": 9,
+                      "src": "547:8:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_uint8_$_t_bool_$",
                         "typeString": "mapping(uint8 => bool)"
                       }
                     },
-                    "id": 355,
+                    "id": 60,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 354,
+                      "id": 59,
                       "name": "_agrupador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 348,
-                      "src": "556:10:1",
+                      "referencedDeclaration": 53,
+                      "src": "556:10:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint8",
                         "typeString": "uint8"
@@ -1472,21 +1472,21 @@
                     "isPure": false,
                     "lValueRequested": false,
                     "nodeType": "IndexAccess",
-                    "src": "547:20:1",
+                    "src": "547:20:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 352,
-                  "id": 356,
+                  "functionReturnParameters": 57,
+                  "id": 61,
                   "nodeType": "Return",
-                  "src": "540:27:1"
+                  "src": "540:27:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 358,
+            "id": 63,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1494,16 +1494,16 @@
             "name": "possuiCarencia",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 349,
+              "id": 54,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 348,
+                  "id": 53,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 358,
-                  "src": "484:16:1",
+                  "scope": 63,
+                  "src": "484:16:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1511,10 +1511,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 347,
+                    "id": 52,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "484:5:1",
+                    "src": "484:5:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -1524,20 +1524,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "483:18:1"
+              "src": "483:18:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 352,
+              "id": 57,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 351,
+                  "id": 56,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 358,
-                  "src": "523:4:1",
+                  "scope": 63,
+                  "src": "523:4:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1545,10 +1545,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 350,
+                    "id": 55,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "523:4:1",
+                    "src": "523:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1558,20 +1558,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "522:6:1"
+              "src": "522:6:0"
             },
-            "scope": 359,
-            "src": "460:115:1",
+            "scope": 64,
+            "src": "460:115:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 360,
-        "src": "28:550:1"
+        "scope": 65,
+        "src": "28:550:0"
       }
     ],
-    "src": "0:578:1"
+    "src": "0:578:0"
   },
   "compiler": {
     "name": "solc",
@@ -1579,5 +1579,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-05-07T18:57:03.337Z"
+  "updatedAt": "2018-05-08T03:40:52.192Z"
 }

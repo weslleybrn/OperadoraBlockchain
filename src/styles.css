@@ -1,3 +1,241 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+:root {
+    --white: #fff;
+    --athens-gray: #f7f8fa;
+    --shuttle-gray: #525c6b;
+    --indigo: #3f74ca;
+}
+
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    border: none;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    user-select: none;
+  }
+  
+  span {
+    box-sizing: border-box;
+  }
+
+  .screen {
+    background-color: var(--indigo);
+    /* display: flex;
+    flex-wrap: wrap; */
+    padding: 1.5vh;
+    width: 36vh;
+    background: linear-gradient(to top, lighten(var(--indigo), 8%) 11.5vh, var(--indigo) 11.5vh);
+    /* height: 60vh; */
+    cursor: pointer !important;
+  }
+  
+  .icon {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 1.5vh;
+    background-color: var(--athens-gray);
+    margin: 1.5vh;
+  }
+  
+  .icon:active {
+    opacity: 0.75;
+  }
+
+  .icon:nth-last-of-type(-n+4) {
+    margin-top: 3vh;
+  }
+  
+  .iphone, .screen {
+    border: 0.5vh solid var(--shuttle-gray);
+  }
+  
+  .iphone {
+    padding: 10vh 1.5vh;
+    border-radius: 6vh;
+    position: relative;
+  }
+
+  .home, .camera, .proximity, .speaker, .silence, .volume-up, .volume-down, .sleep {
+    position: absolute;
+  }
+  
+  .home, .camera, .proximity {
+    border-radius: 50%;
+  }
+  
+  .speaker, .silence, .volume-up, .volume-down, .sleep, .proximity {
+    background-color: var(--shuttle-gray);
+  }
+  
+  .home, .speaker, .camera, .proximity {
+    left: 50%;
+  }
+  
+  .home, .speaker {
+    margin-left: -3vh;
+    width: 6vh;
+  }
+  
+  .home, .camera {
+    border: 0.5vh solid var(--shuttle-gray);
+  }
+  
+  .home {
+    height: 6vh;
+    bottom: 2vh;
+  }
+  
+  .speaker {
+    top: 4.75vh;
+    height: 0.5vh;
+    border-radius: 0.5vh;
+  }
+  
+  .camera {
+    width: 1.5vh;
+    height: 1.5vh;
+    top: 4.25vh;
+    margin-left: -6.5vh;
+  }
+  
+  .proximity {
+    width: 1vh;
+    height: 1vh;
+    top: 2vh;
+    margin-left: -0.5vh;
+  }
+  
+  .silence, .volume-up, .volume-down, .sleep {
+    width: 0.5vh;
+  }
+  
+  .volume-up, .volume-down, .sleep {
+    height: 5vh;
+  }
+  
+  .silence, .volume-up, .volume-down {
+    left: -0.75vh;
+  }
+  
+  .silence {
+    height: 3vh;
+    top: 10vh;
+  }
+  
+  .volume-up, .sleep {
+    top: 17vh;
+  }
+  
+  .volume-down {
+    top: 24vh;
+  }
+  
+  .sleep {
+    right: -0.75vh;
+  }
+
+  @keyframes wiggle {
+    25% {
+      transform: rotate(3.5deg);
+    }
+  
+    75% {
+      transform: rotate(-3.5deg);
+    }
+  }
+  
+  .wiggle .icon {
+    animation: wiggle 0.25s linear infinite;
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+  /* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.mat-card-wizzard {
+  height: 62vh;
+}
+
+.mat-card-wizzard .mat-horizontal-content-container {
+  padding: 1px !important; 
+}
+
+.mat-card-wizzard .mat-horizontal-content-container .mat-horizontal-stepper-header {
+  padding: 1px !important; 
+}
+
+.mat-card-wizzard .mat-card-title {
+  margin-bottom: 1px !important;
+}
+
+.termo-adesao {
+  margin-top: 2px;
+}
+
+.termo-adesao a {
+  width: 156px;
+}
+
+.contrato-fields {
+  margin-top: 6px;
+}
+
+div.mat-step-label.mat-step-label-active {
+  display: none;
+} 
+
+div.mat-step-label.mat-step-label-active.mat-step-label-selected
+{
+  display: block;
+  position: absolute !important;
+  top: 50px;
+  font-size: 45%;
+  left: 25px;
+}
