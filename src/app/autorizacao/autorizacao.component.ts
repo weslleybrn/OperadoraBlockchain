@@ -1,20 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Contrato, ContratosService, Beneficiario } from '../../services/contratos.service';
+import { Contrato, Beneficiario, ContratosService } from '../../services/contratos.service';
+import { ServicosService, Servico } from '../../services/servicos.service';
 
 @Component({
-  selector: 'app-adesao',
-  templateUrl: './adesao.component.html',
-  styleUrls: ['./adesao.component.css']
+  selector: 'app-autorizacao',
+  templateUrl: './autorizacao.component.html',
+  styleUrls: ['./autorizacao.component.css']
 })
-export class AdesaoComponent implements OnInit {
+export class AutorizacaoComponent implements OnInit {
+  panelOpenState = false;
   form: FormGroup;
   contrato: Contrato;
   beneficiario: Beneficiario;
+  servicos: Servico[];
 
   constructor(
     private formBuilder: FormBuilder,
-    private contratoService: ContratosService
+    private contratoService: ContratosService,
+    private servicosService: ServicosService
   ) { }
 
   ngOnInit() {
@@ -40,6 +44,11 @@ export class AdesaoComponent implements OnInit {
       .subscribe(contrato => {
         this.contrato = contrato;
       });
-  }
 
+    this.servicosService
+      .getServicos()
+      .subscribe(servicos => {
+        this.servicos = servicos;
+      });
+  }
 }

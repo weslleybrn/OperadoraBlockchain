@@ -1,0 +1,47 @@
+<form [formGroup]="form" novalidate>
+  <mat-card class="mat-card-custom">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title class="mat-card-title-custom">{{beneficiario.nome}} {{beneficiario.sobreNome}}</mat-card-title>
+      <mat-card-subtitle>{{beneficiario.idade}} anos</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+  <div class="separator"></div>
+  <mat-card>
+    <mat-card-content>
+      <mat-button-toggle-group #group="matButtonToggleGroup" value="2">
+        <mat-button-toggle value="1">
+          <img class="custom-img-buttom" src="../../assets/imgs/carro.png">
+        </mat-button-toggle>
+        <mat-button-toggle value="2">
+          <img class="custom-img-buttom" src="../../assets/imgs/hospital.png">
+        </mat-button-toggle>
+        <mat-button-toggle value="3">
+          <img class="custom-img-buttom" src="../../assets/imgs/casa.png">
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <mat-button-toggle-group class="mat-toggle-custom" #group="matButtonToggleGroup" value="1">
+        <mat-button-toggle value="1">
+          <span>Exames</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="2">
+          <span>Consultas</span>
+        </mat-button-toggle>
+        <mat-button-toggle value="3">
+          <span>Internação</span>
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+      <div>
+        <mat-selection-list>
+          <mat-list-option *ngFor="let servico of servicos" [selected]="servico.codigo == 'SERV01'" >
+          {{servico.nome}}
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <div class="separator"></div>
+  <div class="button-row">
+    <button mat-raised-button color="warn">SOLICITAR</button>
+  </div>
+</form>

@@ -31,16 +31,16 @@ const contract = require('truffle-contract');
 })
 
 export class ServicosService {
-  servicos: Observable<Servico[]>;
+  $servicos: Observable<Servico[]>;
   Servicos = contract(servicosArtifacts);
 
   constructor(private web3Service: Web3Service) {
-    this.servicos = of(SERVICOS);
+    this.$servicos = of(SERVICOS);
     this.Servicos.setProvider(web3Service.web3.currentProvider);
   }
 
   getServicos(): Observable<Servico[]> {
-    return this.servicos;
+    return this.$servicos;
   }
 
   async registrarServico(codigoTUSS: string, nome: string, valor: number, agrupador: number) {

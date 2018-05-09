@@ -1,19 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { WizzardComponent } from './wizzard/wizzard.component';
 import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AdesaoComponent } from './adesao/adesao.component';
+import { AutorizacaoComponent } from './autorizacao/autorizacao.component';
+import { ReciboContratoComponent } from './recibo-contrato/recibo-contrato.component';
 
 const routes: Routes = [{
-  path: 'wizzard',
-  component: WizzardComponent
+  path: 'autorizacao',
+  component: AutorizacaoComponent
 }, {
   path: 'cadastro',
   component: CadastroComponent
 }, {
   path: 'adesao',
   component: AdesaoComponent
+}, {
+  path: 'recibocontrato',
+  component: ReciboContratoComponent
 }, {
   path: '',
   component: HomeComponent

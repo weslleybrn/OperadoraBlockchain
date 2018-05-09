@@ -30,11 +30,12 @@ import {
 } from '../services/contratos.service';
 
 import { AppComponent } from './app.component';
-import { WizzardComponent } from './wizzard/wizzard.component';
 import { HomeComponent } from './home/home.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { Web3Service } from '../services/web3.service';
 import { AdesaoComponent } from './adesao/adesao.component';
+import { AutorizacaoComponent } from './autorizacao/autorizacao.component';
+import { ReciboContratoComponent } from './recibo-contrato/recibo-contrato.component';
 
 const SERVICES = [
   Web3Service,
@@ -44,10 +45,11 @@ const SERVICES = [
 @NgModule({
   declarations: [
     AppComponent,
-    WizzardComponent,
     HomeComponent,
     CadastroComponent,
-    AdesaoComponent
+    AdesaoComponent,
+    AutorizacaoComponent,
+    ReciboContratoComponent
   ],
   imports: [
     NgbModule.forRoot(),

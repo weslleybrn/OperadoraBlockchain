@@ -21,6 +21,7 @@ export class Contrato {
     public codigo: number,
     public hashDocumento: string,
     public nome: string,
+    public mensalidade: number,
     public saldo: number
   ) {}
 }
@@ -36,6 +37,7 @@ const BENEFICIARIO: Beneficiario = new Beneficiario(
 const CONTRATO: Contrato = new Contrato(1,
   '0x8177ba3670860af48af3582093d715e2c5e1deff',
   '0x20da5a327543802766740d22691d58d0b21a4ece0081afc456f02053d65a609e',
+  10,
   100);
 
 declare var require: any;
@@ -55,7 +57,7 @@ export class ContratosService {
 
   constructor(private web3Service: Web3Service) {
     this.$beneficiario = of(BENEFICIARIO);
-
+    this.$contrato = of(CONTRATO);
     this.Contratos.setProvider(web3Service.web3.currentProvider);
   }
 
@@ -138,6 +140,7 @@ export class ContratosService {
         console.log(s);
         return s;
       });
+<<<<<<< HEAD
     } catch (e) {
       console.log(e);
       console.log('Error verificando beneficiario; see log.');
@@ -153,6 +156,8 @@ export class ContratosService {
       {
         gas: 1000000
       });
+=======
+>>>>>>> 9802bf7a09090b514ca1e542e59c91955dcf313d
     } catch (e) {
       console.log(e);
       console.log('Error verificando beneficiario; see log.');
