@@ -42,3 +42,7 @@
 .lista-enumerada {
     font-size: 10px;
 }
+
+.screen {
+    background-image: url('../../assets/imgs/backgroud2.jpg') !important;
+}

@@ -32,14 +32,11 @@ html, body {
   }
 
   .screen {
-    /* background-color: var(--indigo); */
-    /* display: flex;
-    flex-wrap: wrap; */
     padding: 1.5vh;
     width: 40vh;
-    /* background: linear-gradient(to top, var(--blue), var(--indigo)); */
     background-image: url('assets/imgs/backgroud.jpg');
-    background-size: 270px 440px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     min-height: 60vh;
   }
 
