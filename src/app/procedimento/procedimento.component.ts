@@ -5,6 +5,7 @@ import { AutorizadorService } from '../../services/autorizador.service';
 import { Prestador, PrestadorService } from '../../services/prestador.service';
 import { Router } from '@angular/router';
 import { environment } from '../../environments/environment';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-procedimento',
@@ -12,10 +13,11 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./procedimento.component.css']
 })
 export class ProcedimentoComponent implements OnInit {
-
+  form: FormGroup;
   prestador: Prestador;
 
   constructor(
+    private formBuilder: FormBuilder,
     private prestadorService: PrestadorService,
     private servicosService: ServicosService,
     private autorizadorService: AutorizadorService,
@@ -24,6 +26,15 @@ export class ProcedimentoComponent implements OnInit {
 
   ngOnInit() {
     this.load();
+    this.config();
+  }
+
+  config(): any {
+    this.form = this.formBuilder.group({
+      nome: [this.prestador.nome, Validators.nullValidator],
+      sobreNome: [this.prestador.sobreNome, Validators.nullValidator],
+      crm: [this.prestador.crm, Validators.nullValidator]
+    });
   }
 
   load(): any {
@@ -37,7 +48,7 @@ export class ProcedimentoComponent implements OnInit {
   async executar() {
 
     await this.autorizadorService.realizarExecucao(
-      await this.prestadorService.getEndereco(), 
+      await this.prestadorService.getEndereco(),
       await this.servicosService.getEndereco(),
       environment.carteiraPrestador,
       1

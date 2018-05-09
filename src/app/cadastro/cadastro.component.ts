@@ -50,31 +50,9 @@ export class CadastroComponent implements OnInit {
   }
 
   async cadastrar() {
-    //CONTRATOS
     await this.contratoService.adicionarContrato(1, 'Plano Single Flex', environment.carteiraOperadora);
-    // await this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice,
-    //    'ALICE DE SOUZA', '008012234', environment.carteiraOperadora);
-    // await this.contratoService.verificarBeneficiario(1, environment.carteiraAlice, environment.carteiraAlice);
-    // await this.contratoService.receberPagamento(1, environment.carteiraAlice, 12000000000000000000);
-    // this.contratoService.pagarAutorizacao(await this.autorizadorService.getEndereco(), 1, 500000);
-    // this.contratoService.consultarSaldo(1)
-    //   .then(s => { console.log(s) });
-     
-    //SERVICOS
-    await this.servicosService.registrarServico("EX003", "Ultrasonografia Ocular", 2000000000000000000, 1);
-    // await this.servicosService.consultarServico("EX001");
-
-    //PRESTADORES
+    await this.servicosService.registrarServico('EX003', 'Ultrasonografia Ocular', 2000000000000000000, 1);
     await this.prestadoresSerivce.adicionarPrestador(environment.carteiraPrestador);
-    // this.prestadoresSerivce.verificarPrestador(environment.carteiraPrestador, 1)
-    //   .then(o => { console.log(o); });
-
-    //AUTORIZADOR
-    // await this.autorizadorService.registrarAutorizacao(
-    //     await this.contratoService.getEndereco(), 
-    //     environment.carteiraAlice, 
-    //     await this.servicosService.getEndereco(), 
-    //     1, "EX003", 1);
     this.router.navigate(['/adesao']);
   }
 }
