@@ -20,17 +20,18 @@ export class AutorizadorService {
     this.Autorizador.setProvider(web3Service.web3.currentProvider);
   }
 
-  async registrarAutorizacao(enderecoContratos: any, enderecoBeneficiario: any, enderecoServicos: any, codigoContrato: number, codigoServico: string, quantidade: number) {
+  async registrarAutorizacao(enderecoContratos: any, enderecoBeneficiario: any, enderecoServicos: any,
+    codigoContrato: number, codigoServico: string, quantidade: number) {
     try {
       const deployed = await this.Autorizador.deployed();
       const transaction = await deployed
       .registrarAutorizacao
       .sendTransaction(
-        enderecoContratos, 
-        enderecoBeneficiario, 
-        enderecoServicos, 
-        codigoContrato, 
-        codigoServico, 
+        enderecoContratos,
+        enderecoBeneficiario,
+        enderecoServicos,
+        codigoContrato,
+        codigoServico,
         quantidade,
       {
         from: environment.carteiraOperadora,
@@ -54,10 +55,10 @@ export class AutorizadorService {
       const transaction = await deployed
       .realizarExecucao
       .sendTransaction(
-        enderecoPrestadores, 
-        enderecoServicos, 
+        enderecoPrestadores,
+        enderecoServicos,
         carteiraPrestador,
-        numeroAutorizacao, 
+        numeroAutorizacao,
       {
         from: environment.carteiraOperadora,
         gas: 3000000
@@ -80,8 +81,8 @@ export class AutorizadorService {
       const transaction = await deployed
       .confirmarExecucao
       .sendTransaction(
-        numeroAutorizacao, 
-        carteriaPrestador, 
+        numeroAutorizacao,
+        carteriaPrestador,
       {
         from: environment.carteiraOperadora,
         gas: 3000000

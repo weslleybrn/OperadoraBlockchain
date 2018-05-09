@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Beneficiario, ContratosService } from '../../services/contratos.service';
 import { ServicosService } from '../../services/servicos.service';
 import { PrestadorService } from '../../services/prestador.service';
-// import { AutorizadorService } from '../../services/autorizador.service';
+import { AutorizadorService } from '../../services/autorizador.service';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { environment } from '../../environments/environment';
 import { Router } from '@angular/router';
@@ -21,7 +21,7 @@ export class CadastroComponent implements OnInit {
     private contratoService: ContratosService,
     private servicosService: ServicosService,
     private prestadoresSerivce: PrestadorService,
-    // private autorizadorService: AutorizadorService,
+    private autorizadorService: AutorizadorService,
     private router: Router
   ) {  }
 

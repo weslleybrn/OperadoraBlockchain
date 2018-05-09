@@ -56,13 +56,13 @@ contract Contratos {
     }
     
     function pagarAutorizacao(address _autorizador, uint _codigoContrato, uint _valor) public {
-        uint valor = (_valor * 10**18);
-        require(address(this).balance >= valor);
+        //uint valor = (_valor * 10**18);
+        require(address(this).balance >= _valor);
         
-        uint saldo = contratos[_codigoContrato].saldo - valor;
+        uint saldo = contratos[_codigoContrato].saldo - _valor;
         contratos[_codigoContrato].saldo = saldo;
         
-        _autorizador.transfer(valor);
+        _autorizador.transfer(_valor);
     }
     
     function adicionarBeneficiario(uint _codigoContrato, address _wallet, string _nome, string _carteira) public {
