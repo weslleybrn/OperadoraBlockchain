@@ -21,6 +21,7 @@ export class Contrato {
     public codigo: number,
     public hashDocumento: string,
     public nome: string,
+    public mensalidade: number,
     public saldo: number
   ) {}
 }
@@ -36,6 +37,7 @@ const BENEFICIARIO: Beneficiario = new Beneficiario(
 const CONTRATO: Contrato = new Contrato(1,
   '0x8177ba3670860af48af3582093d715e2c5e1deff',
   '0x20da5a327543802766740d22691d58d0b21a4ece0081afc456f02053d65a609e',
+  10,
   100);
 
 declare var require: any;
@@ -55,7 +57,7 @@ export class ContratosService {
 
   constructor(private web3Service: Web3Service) {
     this.$beneficiario = of(BENEFICIARIO);
-
+    this.$contrato = of(CONTRATO);
     this.Contratos.setProvider(web3Service.web3.currentProvider);
   }
 
@@ -117,12 +119,6 @@ export class ContratosService {
         console.log(s);
         return s;
       });
-
-    //   if (!transaction) {
-    //     console.log('Transaction failed!');
-    //   } else {
-    //     console.log('Transaction complete!');
-    //   }
     } catch (e) {
       console.log(e);
       console.log('Error sending coin; see log.');

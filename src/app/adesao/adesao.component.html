@@ -1,38 +1,41 @@
 <form [formGroup]="form" novalidate>
-    <mat-card>
+    <mat-card class="mat-card-custom">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{this.beneficiario.nome}}</mat-card-title>
-        <mat-card-subtitle>{{this.beneficiario.sobreNome}}</mat-card-subtitle>
+        <mat-card-title class="mat-card-title-custom">{{this.beneficiario.nome}} {{this.beneficiario.sobreNome}}</mat-card-title>
+        <mat-card-subtitle>{{this.beneficiario.idade}} anos</mat-card-subtitle>
       </mat-card-header>
+    </mat-card>
+    <div class="separator"></div>
+    <mat-card>
       <mat-card-content>
         <mat-button-toggle-group #group="matButtonToggleGroup" value="2">
           <mat-button-toggle value="1">
-            <i class="material-icons">directions_car</i>
+            <img class="custom-img-buttom" src="../../assets/imgs/carro.png">
           </mat-button-toggle>
           <mat-button-toggle value="2">
-            <i class="material-icons">location_city</i>
+            <img class="custom-img-buttom" src="../../assets/imgs/hospital.png">
           </mat-button-toggle>
           <mat-button-toggle value="3">
-            <i class="material-icons">account_balance</i>
+            <img class="custom-img-buttom" src="../../assets/imgs/casa.png">
           </mat-button-toggle>
         </mat-button-toggle-group>
         <div class="contrato-fields">
           <mat-form-field class="example-full-width">
-            <input matInput placeholder="NOME" value="Plano Single Flex" >
+            <input matInput placeholder="NOME" value="Plano Single Flex">
           </mat-form-field>
+        <div class="termo-adesao">
+            <a mat-button routerLink=".">Termos de adesão</a>
+        </div>
           <mat-form-field class="example-full-width">
-              <input matInput type="number" placeholder="MENSALIDADE" formControlName="mensalidade" value="10">
+              <input matInput class="text-align-rigth" placeholder="MENSALIDADE" formControlName="mensalidade" value="10">
               <span matSuffix>.00</span>
             </mat-form-field>
         </div>
-        <div class="termo-adesao">
-            <a mat-raised-button routerLink=".">Termos de adesão</a>
-        </div>
       </mat-card-content>
     </mat-card>
+    <div class="separator"></div>
     <div class="button-row">
-      <button mat-button matStepperPrevious class="button-custom">VOLTAR</button>
-      <button mat-raised-button color="primary" matStepperNext class="button-custom">ADERIR</button>
+      <button mat-raised-button color="warn">ADERIR</button>
     </div>
 </form>

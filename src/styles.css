@@ -39,8 +39,7 @@ html, body {
     width: 40vh;
     /* background: linear-gradient(to top, var(--blue), var(--indigo)); */
     background-image: url('assets/imgs/backgroud.jpg');
-    background-repeat: no-repeat;
-    background-position: center; 
+    background-size: 270px 440px;
     min-height: 60vh;
   }
 

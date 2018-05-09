@@ -74,6 +74,7 @@ export class WizzardComponent implements OnInit {
       this.model.contrato = new Contrato(1,
       '0x8177ba3670860af48af3582093d715e2c5e1deff',
       '0x20da5a327543802766740d22691d58d0b21a4ece0081afc456f02053d65a609e',
+      10,
       100);
   }
 

@@ -23,7 +23,8 @@ export class AdesaoComponent implements OnInit {
     this.form = this.formBuilder.group({
       nome: [this.contrato.nome, Validators.nullValidator],
       codigo: [this.contrato.codigo, Validators.nullValidator],
-      saldo: [this.contrato.saldo, Validators.nullValidator]
+      saldo: [this.contrato.saldo, Validators.nullValidator],
+      mensalidade: [this.contrato.mensalidade, Validators.nullValidator]
     });
   }
 
