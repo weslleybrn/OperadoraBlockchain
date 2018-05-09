@@ -35,6 +35,8 @@ contract Contratos {
     
     function adicionarContrato(uint _codigoContrato, string _nomeContrato, string _hash) onlyOwner public {
 
+        //require(contratos[_codigoContrato].nomeDoContrato == "");7
+
         uint8[] memory agrupadores = new uint8[](5);
         agrupadores[0] = 1;
         agrupadores[1] = 2;
@@ -58,6 +60,7 @@ contract Contratos {
     function pagarAutorizacao(address _autorizador, uint _codigoContrato, uint _valor) public {
         //_valor = _valor * 10**18;
         require(address(this).balance >= _valor);
+        require(contratos[_codigoContrato].saldo >= _valor);
         
         uint saldo = contratos[_codigoContrato].saldo - _valor;
         contratos[_codigoContrato].saldo = saldo;
@@ -113,7 +116,7 @@ contract Contratos {
     }
     
     function recuperarCobertura(uint _codigoContrato) public view returns (address) {
-        return address(contratos[_codigoContrato].cobertura);
+         return address(contratos[_codigoContrato].cobertura);
     }
     
     function cancelarContrato() onlyOwner public {

@@ -18,6 +18,9 @@ contract Autorizador {
     
     Autorizacao[] autorizacoes;
     
+    function() payable public {
+    }
+    
     function registrarAutorizacao(address _enderecoContratos, address _beneficiario, address _servicos, uint _codigoDoContrato, string _codigoTUSS, uint _quantidade) public {
         
         Contratos contratos = Contratos(_enderecoContratos);
@@ -31,7 +34,7 @@ contract Autorizador {
         uint8 agrupador;
         (preco, agrupador) = servicos.consultarServico(_codigoTUSS);
         
-        require(address(contratos).balance >= (preco * _quantidade));
+        //require(address(contratos).balance >= (preco * _quantidade));
 
         //Validar se possui cobertura para o serviço
         Cobertura cobertura = Cobertura(contratos.recuperarCobertura(_codigoDoContrato));
