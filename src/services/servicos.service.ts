@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
-import { take, map } from 'rxjs/operators';
+import { Observable } from 'rxjs/internal/Observable';
+import { fromPromise } from 'rxjs/internal/observable/fromPromise';
+import { Web3Service } from './web3.service';
+import { environment } from '../environments/environment';
+
 import {
-  Observable,
   Observer,
   of,
   BehaviorSubject
@@ -14,31 +17,86 @@ export class Servico {
 }
 
 const SERVICOS: Servico[] = [
-  new Servico('SERV01', 'Exame de sangue', 50),
-  new Servico('SERV02', 'Raio X', 100),
-  new Servico('SERV03', 'Consulta', 150)
+  new Servico('EX001', 'Tonometria', 50),
+  new Servico('EX002', 'Exame de Refração', 100),
+  new Servico('EX003', 'Ultrasonografia Ocular', 150)
 ];
+
+declare var require: any;
+const servicosArtifacts = require('../../solidity/build/contracts/Servicos.json');
+const contract = require('truffle-contract');
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServicosService {
-  private $servicos: Observable<Servico[]>;
 
-  constructor() {
+export class ServicosService {
+  $servicos: Observable<Servico[]>;
+  Servicos = contract(servicosArtifacts);
+
+  constructor(private web3Service: Web3Service) {
     this.$servicos = of(SERVICOS);
+    this.Servicos.setProvider(web3Service.web3.currentProvider);
   }
 
   getServicos(): Observable<Servico[]> {
     return this.$servicos;
   }
 
-  getServicoPorCodigo(codigo: string): Observable<Servico> {
-    return this.getServicos()
-      .pipe(map(servicos => servicos.find(servico => servico.codigo === codigo)))
-      .pipe(take(1))
-      .pipe(map(contratos => {
-        return contratos;
-      }));
+  async registrarServico(codigoTUSS: string, nome: string, valor: number, agrupador: number) {
+    this.Servicos
+        try {
+          const deployed = await this.Servicos.deployed();
+          const transaction = await deployed
+          .registrarServico
+          .sendTransaction(codigoTUSS, nome, valor, agrupador,
+            {
+              from: environment.carteiraOperadora,
+              gas: 1000000
+            });
+    
+          if (!transaction) {
+            console.log('Transaction failed!');
+          } else {
+            console.log('Transaction complete!');
+          }
+        } catch (e) {
+          console.log(e);
+          console.log('Error adicionando serviço; see log.');
+        }
   }
+
+  async consultarServico(codigoTUSS: string) {
+    try {
+      const deployed = await this.Servicos.deployed();
+      return deployed
+        .consultarServico
+        .call(codigoTUSS,
+        {
+          // from: account,
+          gas: 1000000
+        })
+        .then(s => {
+          console.log(s);
+          return s;
+        });
+    } catch (e) {
+      console.log(e);
+      console.log('Error consultado serviço; see log.');
+    }
+  }
+
+  async getEndereco(): Promise<string> {
+    const deployed = await this.Servicos.deployed();
+    return deployed.address;
+  }
+
+  // getServicoPorCodigo(codigo: string): Observable<Servico> {
+  //   return this.getServicos()
+  //     .pipe(map(servicos => servicos.find(servico => servico.codigo === codigo)))
+  //     .pipe(take(1))
+  //     .pipe(map(contratos => {
+  //       return contratos;
+  //     }));
+  // }
 }

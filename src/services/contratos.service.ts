@@ -79,7 +79,7 @@ export class ContratosService {
       }
     } catch (e) {
       console.log(e);
-      console.log('Error sending coin; see log.');
+      console.log('Error adicionando contrato; see log.');
     }
   }
 
@@ -101,7 +101,29 @@ export class ContratosService {
       }
     } catch (e) {
       console.log(e);
-      console.log('Error sending coin; see log.');
+      console.log('Error adicionando beneficiario; see log.');
+    }
+  }
+
+  async pagarAutorizacao(enderecoAutorizador: any, codigoContrato: number, valor: number) {
+    try {
+      const deployed = await this.Contratos.deployed();
+      const transaction = await deployed
+      .pagarAutorizacao
+      .sendTransaction(enderecoAutorizador, codigoContrato, valor,
+        {
+          from: environment.carteiraOperadora,
+          gas: 3000000
+        });
+
+      if (!transaction) {
+        console.log('Transaction failed!');
+      } else {
+        console.log('Transaction complete!');
+      }
+    } catch (e) {
+      console.log(e);
+      console.log('Error pagando autorização; see log.');
     }
   }
 
@@ -112,7 +134,6 @@ export class ContratosService {
       .verificarBeneficiario
       .call(codigoContrato, enderecoCliente,
       {
-        from: account,
         gas: 1000000
       })
       .then(s => {
@@ -121,22 +142,46 @@ export class ContratosService {
       });
     } catch (e) {
       console.log(e);
-      console.log('Error sending coin; see log.');
+      console.log('Error verificando beneficiario; see log.');
     }
   }
 
-  receberPagamento(codigoContrato: number, account: any, valor: number) {
-    let meta;
+  async consultarSaldo(codigoContrato: number): Promise<any> {
+    try {
+      const deployed = await this.Contratos.deployed();
+      return deployed
+      .consultarSaldo
+      .call(codigoContrato,
+      {
+        gas: 1000000
+      });
+    } catch (e) {
+      console.log(e);
+      console.log('Error verificando beneficiario; see log.');
+    }
+  }
 
-    this.Contratos
-        .deployed()
-        .then(instance => {
-          meta = instance;
-          return meta.receberPagamento.call(codigoContrato, {from: account, value: valor});
-        })
-        .catch(e => {
-          console.log(e);
+  async receberPagamento(codigoContrato: number, account: any, valor: number) {
+    try {
+      const deployed = await this.Contratos.deployed();
+      const transaction = deployed
+        .receberPagamento
+        .sendTransaction(codigoContrato,
+        {
+          from: account,
+          gas: 1000000,
+          value: valor
         });
+
+        if (!transaction) {
+          console.log('Transaction failed!');
+        } else {
+          console.log('Transaction complete!');
+        }
+    } catch (e) {
+      console.log(e);
+      console.log('Error recebendo pagamento; see log.');
+    }
   }
 
   getBeneficiario(): Observable<Beneficiario> {
@@ -145,5 +190,10 @@ export class ContratosService {
 
   getContrato(): Observable<Contrato> {
     return this.$contrato;
+  }
+
+  async getEndereco(): Promise<string> {
+    const deployed = await this.Contratos.deployed();
+    return deployed.address;
   }
 }
