@@ -44,26 +44,25 @@ export class ServicosService {
   }
 
   async registrarServico(codigoTUSS: string, nome: string, valor: number, agrupador: number) {
-    this.Servicos
-        try {
-          const deployed = await this.Servicos.deployed();
-          const transaction = await deployed
-          .registrarServico
-          .sendTransaction(codigoTUSS, nome, valor, agrupador,
-            {
-              from: environment.carteiraOperadora,
-              gas: 1000000
-            });
-    
-          if (!transaction) {
-            console.log('Transaction failed!');
-          } else {
-            console.log('Transaction complete!');
-          }
-        } catch (e) {
-          console.log(e);
-          console.log('Error adicionando serviço; see log.');
-        }
+    try {
+      const deployed = await this.Servicos.deployed();
+      const transaction = await deployed
+      .registrarServico
+      .sendTransaction(codigoTUSS, nome, valor, agrupador,
+        {
+          from: environment.carteiraOperadora,
+          gas: 1000000
+        });
+
+      if (!transaction) {
+        console.log('Transaction failed!');
+      } else {
+        console.log('Transaction complete!');
+      }
+    } catch (e) {
+      console.log(e);
+      console.log('Error adicionando serviço; see log.');
+    }
   }
 
   async consultarServico(codigoTUSS: string) {
