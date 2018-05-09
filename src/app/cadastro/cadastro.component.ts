@@ -61,7 +61,7 @@ export class CadastroComponent implements OnInit {
     //   .then(s => { console.log(s) });
      
     //SERVICOS
-    await this.servicosService.registrarServico("EX003", "Exame de Sangue", 2000, 1);
+    await this.servicosService.registrarServico("EX003", "Ultrasonografia Ocular", 2000000000000000000, 1);
     // await this.servicosService.consultarServico("EX001");
 
     //PRESTADORES

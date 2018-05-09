@@ -47,9 +47,9 @@ export class AdesaoComponent implements OnInit {
 
   async aderir() {
     await this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice,
-      'ALICE DE SOUZA', '008012234', environment.carteiraOperadora);
+      'ALICE DE SOUZA', '00804040000123019', environment.carteiraOperadora);
 
-    await this.contratoService.receberPagamento(1, environment.carteiraAlice, 12000000000000000000);
+    await this.contratoService.receberPagamento(1, environment.carteiraAlice, 10000000000000000000);
 
     this.router.navigate(['/autorizacao']);
   }

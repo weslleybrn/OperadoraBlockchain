@@ -48,7 +48,7 @@ export class AutorizadorService {
     }
   }
 
-  async realizarExecucao(enderecoPrestadores: any, enderecoServicos: any, numeroAutorizacao: number) {
+  async realizarExecucao(enderecoPrestadores: any, enderecoServicos: any, carteiraPrestador: any, numeroAutorizacao: number) {
     try {
       const deployed = await this.Autorizador.deployed();
       const transaction = await deployed
@@ -56,6 +56,7 @@ export class AutorizadorService {
       .sendTransaction(
         enderecoPrestadores, 
         enderecoServicos, 
+        carteiraPrestador,
         numeroAutorizacao, 
       {
         from: environment.carteiraOperadora,
@@ -94,6 +95,21 @@ export class AutorizadorService {
     } catch (e) {
       console.log(e);
       console.log('Error confirmando execução; see log.');
+    }
+  }
+
+  async consultarSaldo(): Promise<any> {
+    try {
+      const deployed = await this.Autorizador.deployed();
+      return deployed
+      .consultarSaldo
+      .call(
+      {
+        gas: 1000000
+      });
+    } catch (e) {
+      console.log(e);
+      console.log('Error consultado saldo; see log.');
     }
   }
 

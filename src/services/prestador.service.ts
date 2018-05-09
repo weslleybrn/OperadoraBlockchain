@@ -67,4 +67,9 @@ export class PrestadorService {
       console.log('Error adicionando prestador; see log.');
     }
   }
+
+  async getEndereco(): Promise<string> {
+    const deployed = await this.Prestadores.deployed();
+    return deployed.address;
+  }
 }

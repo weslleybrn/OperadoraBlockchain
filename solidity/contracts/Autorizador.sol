@@ -57,7 +57,7 @@ contract Autorizador {
         //emit(autorizacoes.length)
     }
     
-    function realizarExecucao(address _contratoPrestadores, address _servicos, uint _numeroDaAutorizacao) public {
+    function realizarExecucao(address _contratoPrestadores, address _servicos, address _prestador, uint _numeroDaAutorizacao) public {
         require(_numeroDaAutorizacao <= autorizacoes.length);
         
         Autorizacao memory autorizacao = autorizacoes[_numeroDaAutorizacao - 1];
@@ -67,11 +67,11 @@ contract Autorizador {
         uint8 agrupador = servicos.consultarAgrupador(autorizacao.codigoTuss);
         
         Prestadores prestadores = Prestadores(_contratoPrestadores);
-        bool prestadorOk = prestadores.verificarPrestador(msg.sender, agrupador);
+        bool prestadorOk = prestadores.verificarPrestador(_prestador, agrupador);
         
         require(prestadorOk);
 
-        autorizacao.prestador = msg.sender;
+        autorizacao.prestador = _prestador;
         
         autorizacoes[_numeroDaAutorizacao - 1] = autorizacao;
     }
@@ -80,11 +80,15 @@ contract Autorizador {
         require(_numeroDaAutorizacao <= autorizacoes.length);
         
         Autorizacao memory autorizacao = autorizacoes[_numeroDaAutorizacao - 1];
-        require((msg.sender == autorizacao.beneficiario) && (_prestador == autorizacao.prestador) && (autorizacao.confirmada == false) && (address(this).balance >= autorizacao.valor));
+        require((_prestador == autorizacao.prestador) && (autorizacao.confirmada == false) && (address(this).balance >= autorizacao.valor));
         
         autorizacao.confirmada = true;
         autorizacao.prestador.transfer(autorizacao.valor);
         
         autorizacoes[_numeroDaAutorizacao - 1] = autorizacao;
+    }
+
+    function consultarSaldo() public view returns (uint saldo) {
+        saldo = address(this).balance;
     }
 }
