@@ -1,3 +1,54 @@
-<p>
-  recibo-contrato works!
-</p>
+<mat-card>
+  <table class="printer-ticket">
+    <thead>
+     <tr>
+       <th class="title" colspan="3">AUTORIZADOR</th>
+     </tr>
+     <tr>
+       <th colspan="3">{{data | date: 'dd/MM/yyyy'}} - {{data | date: 'hh/mm/ss'}}</th>
+     </tr>
+     <tr>
+       <th colspan="3">
+         ALICE DE SOUZA <br />
+         864.155.337-11
+       </th>
+     </tr>
+     <tr>
+       <th class="ttu" colspan="3">
+         <b>Serviço Autorizado</b>
+       </th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr class="top">
+       <td colspan="3">EX003 - ULTRASONOGRAFIA OCULAR </td>
+     </tr>
+     <tr>
+       <td>ETH 10.00</td>
+       <td>1.0</td>
+       <td>ETH 10.00</td>
+     </tr>
+   </tbody>
+   <tfoot>
+     <tr class="sup ttu p--0">
+       <td colspan="3">
+         <b>Pagamentos</b>
+       </td>
+     </tr>
+     <tr class="ttu">
+       <td colspan="2">ETHEREUM</td>
+       <td align="right">ETH 10.00</td>
+     </tr>
+     <tr class="sup">
+       <td colspan="3" align="center">
+          0x798d67ff106de4c705ab00d86fad81fba7 <br>
+          e05da0e82c8bca1984bbf832148c94
+       </td>
+     </tr>
+   </tfoot>
+  </table>
+</mat-card>
+<div class="separator"></div>
+<div class="button-row">
+    <button mat-raised-button color="warn" (click)="cadastrar()">CONCLUIR</button>
+</div>
