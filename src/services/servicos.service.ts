@@ -23,14 +23,14 @@ const SERVICOS: Servico[] = [
   providedIn: 'root'
 })
 export class ServicosService {
-  servicos: Observable<Servico[]>;
+  private $servicos: Observable<Servico[]>;
 
   constructor() {
-    this.servicos = of(SERVICOS);
+    this.$servicos = of(SERVICOS);
   }
 
   getServicos(): Observable<Servico[]> {
-    return this.servicos;
+    return this.$servicos;
   }
 
   getServicoPorCodigo(codigo: string): Observable<Servico> {

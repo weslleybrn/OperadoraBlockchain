@@ -1,0 +1,52 @@
+.example-header-image {
+    background-image: url('../../assets/imgs/user.png');
+    background-size: cover;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.example-full-width {
+    width: 100%;
+}
+
+.example-right-align {
+    text-align: right;
+}
+
+.separator {
+    height: 4px;
+}
+
+.text-align-rigth {
+    text-align: right;
+}
+
+.mat-card-custom {
+    padding-top: 10px !important;
+    padding-bottom: 2px !important;
+}
+
+.button-row-custom {
+    padding-top: 10px;
+}
+
+.custom-img-buttom {
+    margin-top: 10px;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 2.8vh;
+    background-color: var(--athens-gray);
+}
+
+.termo-adesao {
+    margin-left: 40px;
+    margin-bottom: 12px;
+}
+
+.mat-toggle-custom span {
+    font-size: 1.4vh;
+}
