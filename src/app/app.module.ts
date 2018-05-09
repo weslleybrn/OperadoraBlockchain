@@ -36,6 +36,8 @@ import { Web3Service } from '../services/web3.service';
 import { AdesaoComponent } from './adesao/adesao.component';
 import { AutorizacaoComponent } from './autorizacao/autorizacao.component';
 import { ReciboContratoComponent } from './recibo-contrato/recibo-contrato.component';
+import { ProcedimentoComponent } from './procedimento/procedimento.component';
+import { ReciboProcedimentoComponent } from './recibo-procedimento/recibo-procedimento.component';
 
 const SERVICES = [
   Web3Service,
@@ -49,7 +51,9 @@ const SERVICES = [
     CadastroComponent,
     AdesaoComponent,
     AutorizacaoComponent,
-    ReciboContratoComponent
+    ReciboContratoComponent,
+    ProcedimentoComponent,
+    ReciboProcedimentoComponent
   ],
   imports: [
     NgbModule.forRoot(),

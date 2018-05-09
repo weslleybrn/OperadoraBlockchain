@@ -1,0 +1,77 @@
+<mat-card>
+  <table class="printer-ticket">
+    <thead>
+     <tr>
+       <th class="title" colspan="3">AUTORIZADOR</th>
+     </tr>
+     <tr>
+       <th colspan="3">{{data | date: 'dd/MM/yyyy'}} - {{data | date: 'hh/mm/ss'}}</th>
+     </tr>
+     <tr>
+       <th colspan="3">
+         MARCOS DA SILVA <br />
+         CRM 131.313
+       </th>
+     </tr>
+     <tr>
+       <th class="ttu" colspan="3">
+         <b>Serviço Realizado</b>
+       </th>
+     </tr>
+   </thead>
+   <tbody>
+      <tr class="top">
+          <td colspan="3">ALICE DE SOUZA </td>
+        </tr>
+     <tr>
+       <td colspan="3">EX003 - ULTRASONOGRAFIA OCULAR </td>
+     </tr>
+     <tr>
+       <td>ETH 10.00</td>
+       <td>1.0</td>
+       <td>ETH 10.00</td>
+     </tr>
+   </tbody>
+   <tfoot>
+     <tr class="sup ttu p--0">
+       <td colspan="3">
+         <b>RECEBIMENTOS</b>
+       </td>
+     </tr>
+     <tr class="ttu">
+       <td colspan="2">ETHEREUM</td>
+       <td align="right">ETH 10.00</td>
+     </tr>
+     <tr class="sup">
+       <td colspan="3" align="center">
+          0x798d67ff106de4c705ab00d86fad81fba7 <br>
+          e05da0e82c8bca1984bbf832148c94
+       </td>
+     </tr>
+   </tfoot>
+  </table>
+</mat-card>
+<div class="separator"></div>
+<mat-card class="mat-card-custom">
+  <span class="mat-custom-title">Saldo do contrato</span>
+  <mat-card-content>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+            <mat-form-field class="example-full-width">
+              <input matInput class="text-align-rigth" placeholder="ANTERIOR" value="100">
+              <span matSuffix>.00</span>
+            </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <mat-form-field class="example-full-width">
+            <input matInput class="text-align-rigth" placeholder="ATUAL" value="110">
+            <span matSuffix>.00</span>
+          </mat-form-field>
+        </mat-grid-tile>
+      </mat-grid-list>
+  </mat-card-content>
+</mat-card>
+<div class="separator"></div>
+<div class="button-row">
+    <button mat-raised-button color="warn" [routerLink]="['/']">FINALIZAR</button>
+</div>
