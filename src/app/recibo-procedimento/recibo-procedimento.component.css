@@ -55,3 +55,17 @@
  .separator {
     height: 4px;
 }
+
+.example-full-width {
+  width: 100%;
+}
+
+.text-align-rigth {
+  text-align: right;
+}
+
+.mat-custom-title {
+  color: rgba(0,0,0,.54);
+  text-transform: uppercase;
+  font-size: 11px;
+}
