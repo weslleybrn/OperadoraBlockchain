@@ -140,7 +140,6 @@ export class ContratosService {
         console.log(s);
         return s;
       });
-<<<<<<< HEAD
     } catch (e) {
       console.log(e);
       console.log('Error verificando beneficiario; see log.');
@@ -156,8 +155,6 @@ export class ContratosService {
       {
         gas: 1000000
       });
-=======
->>>>>>> 9802bf7a09090b514ca1e542e59c91955dcf313d
     } catch (e) {
       console.log(e);
       console.log('Error verificando beneficiario; see log.');
