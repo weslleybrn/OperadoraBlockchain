@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Contrato, ContratosService, Beneficiario } from '../../services/contratos.service';
+import { environment } from '../../environments/environment';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-adesao',
@@ -14,7 +16,8 @@ export class AdesaoComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private contratoService: ContratosService
+    private contratoService: ContratosService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -42,4 +45,12 @@ export class AdesaoComponent implements OnInit {
       });
   }
 
+  async aderir() {
+    await this.contratoService.adicionarBeneficiario(1, environment.carteiraAlice,
+      'ALICE DE SOUZA', '008012234', environment.carteiraOperadora);
+
+    await this.contratoService.receberPagamento(1, environment.carteiraAlice, 12000000000000000000);
+
+    this.router.navigate(['/autorizacao']);
+  }
 }
