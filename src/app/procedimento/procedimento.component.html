@@ -1,3 +1,45 @@
-<p>
-  procedimento works!
-</p>
+<form [formGroup]="form" novalidate>
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="mat-card-title-custom">{{this.prestador.nome}} {{this.prestador.sobreNome}}</mat-card-title>
+        <mat-card-subtitle>{{this.prestador.crm}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <div class="separator"></div>
+    <mat-card>
+      <mat-card-content>
+          <mat-card class="mat-card-custom">
+            <mat-card-header>
+              <div mat-card-avatar class="header-image-cliente"></div>
+              <mat-card-title class="mat-card-title-custom">ALICE</mat-card-title>
+              <mat-card-subtitle>DE SOUZA</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <ul class="lista-enumerada">
+                <li>EX003 - ULTRASONOGRAFIA OCULAR</li>
+              </ul>
+            </mat-card-content>
+          </mat-card>
+          <div class="button-row">
+              <button mat-raised-button color="warn">EXECUTAR</button>
+          </div>
+          <div class="separator"></div>
+          <mat-card class="mat-card-custom">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title class="mat-card-title-custom">BERNARDO</mat-card-title>
+              <mat-card-subtitle>SIQUEIRA</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <ul class="lista-enumerada">
+                <li>EX001 - TONOMETRIA</li>
+              </ul>
+            </mat-card-content>
+          </mat-card>
+          <div class="button-row">
+              <button mat-raised-button color="warn">EXECUTAR</button>
+          </div>
+      </mat-card-content>
+    </mat-card>
+  </form>

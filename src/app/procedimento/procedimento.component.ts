@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Prestador, PrestadorService } from '../../services/prestador.service';
 
 @Component({
   selector: 'app-procedimento',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProcedimentoComponent implements OnInit {
 
-  constructor() { }
+  prestador: Prestador;
+
+  constructor(
+    private prestadorService: PrestadorService
+  ) { }
 
   ngOnInit() {
+    this.load();
   }
 
+  load(): any {
+    this.prestadorService
+      .getPrestador()
+      .subscribe(prestador => {
+        this.prestador = prestador;
+      });
+  }
 }
