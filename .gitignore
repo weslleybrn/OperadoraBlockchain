@@ -24,6 +24,16 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 
+#Build Solidity
+solidity/build/*
+solidity/build/contracts/Servicos.json
+solidity/build/contracts/Autorizador.json
+solidity/build/contracts/Carencia.json
+solidity/build/contracts/Cobertura.json
+solidity/build/contracts/Contratos.json
+solidity/build/contracts/Migrations.json
+solidity/build/contracts/Prestadores.json
+
 # misc
 /.sass-cache
 /connect.lock
@@ -37,3 +47,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
