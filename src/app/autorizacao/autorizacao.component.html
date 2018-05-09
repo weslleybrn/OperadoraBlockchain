@@ -33,7 +33,7 @@
       </mat-button-toggle-group>
       <div>
         <mat-selection-list>
-          <mat-list-option *ngFor="let servico of servicos" [selected]="servico.codigo == 'SERV01'" >
+          <mat-list-option *ngFor="let servico of servicos" [selected]="servico.codigo == 'EX003'" >
           {{servico.nome}}
           </mat-list-option>
         </mat-selection-list>
@@ -42,6 +42,6 @@
   </mat-card>
   <div class="separator"></div>
   <div class="button-row">
-    <button mat-raised-button color="warn">SOLICITAR</button>
+    <button mat-raised-button color="warn" (click)="solicitar()">SOLICITAR</button>
   </div>
 </form>
