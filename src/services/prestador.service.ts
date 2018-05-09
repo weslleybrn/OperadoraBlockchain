@@ -82,6 +82,11 @@ export class PrestadorService {
     }
   }
 
+  async getEndereco(): Promise<string> {
+    const deployed = await this.Prestadores.deployed();
+    return deployed.address;
+  }
+  
   getPrestador(): Observable<Prestador> {
     return this.$prestador;
   }

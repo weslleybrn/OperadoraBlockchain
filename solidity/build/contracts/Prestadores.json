@@ -39,24 +39,24 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x608060405234801561001057600080fd5b5061096c806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a0c9d9914610051578063c1a68a23146100b9575b600080fd5b34801561005d57600080fd5b5061009f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff1690602001909291905050506100fc565b604051808215151515815260200191505060405180910390f35b3480156100c557600080fd5b506100fa600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103c3565b005b6000610106610681565b60008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016000820160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815250509150816000015173ffffffffffffffffffffffffffffffffffffffff16636e026642856040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff168152602001915050602060405180830381600087803b15801561029c57600080fd5b505af11580156102b0573d6000803e3d6000fd5b505050506040513d60208110156102c657600080fd5b810190808051906020019092919050505090508080156103b9575060017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9250505092915050565b606060006103cf610681565b60056040519080825280602002602001820160405280156103ff5781602001602082028038833980820191505090505b509250600183600081518110151561041357fe5b9060200190602002019060ff16908160ff1681525050600283600181518110151561043a57fe5b9060200190602002019060ff16908160ff16815250506104586106d3565b604051809103906000f080158015610474573d6000803e3d6000fd5b5091508173ffffffffffffffffffffffffffffffffffffffff166326a17cbc846040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019060200280838360005b838110156105025780820151818401526020810190506104e7565b5050505090500192505050600060405180830381600087803b15801561052757600080fd5b505af115801561053b573d6000803e3d6000fd5b5050505060408051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815260200160017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152509050806000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690837f01000000000000000000000000000000000000000000000000000000000000009004021790555090505050505050565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160007effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191681525090565b60405161025d806106e4833901905600608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a7230582010a3731e0ba2da3eb4f0b5af3aba2d76580b8e8cd59b791a66306ee663db06620029a165627a7a72305820d651d114d558b7388145ae3cbd17e454328e72d4e62813a88bb4e0f88dc872a00029",
-  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a0c9d9914610051578063c1a68a23146100b9575b600080fd5b34801561005d57600080fd5b5061009f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff1690602001909291905050506100fc565b604051808215151515815260200191505060405180910390f35b3480156100c557600080fd5b506100fa600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103c3565b005b6000610106610681565b60008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016000820160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815250509150816000015173ffffffffffffffffffffffffffffffffffffffff16636e026642856040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff168152602001915050602060405180830381600087803b15801561029c57600080fd5b505af11580156102b0573d6000803e3d6000fd5b505050506040513d60208110156102c657600080fd5b810190808051906020019092919050505090508080156103b9575060017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9250505092915050565b606060006103cf610681565b60056040519080825280602002602001820160405280156103ff5781602001602082028038833980820191505090505b509250600183600081518110151561041357fe5b9060200190602002019060ff16908160ff1681525050600283600181518110151561043a57fe5b9060200190602002019060ff16908160ff16815250506104586106d3565b604051809103906000f080158015610474573d6000803e3d6000fd5b5091508173ffffffffffffffffffffffffffffffffffffffff166326a17cbc846040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019060200280838360005b838110156105025780820151818401526020810190506104e7565b5050505090500192505050600060405180830381600087803b15801561052757600080fd5b505af115801561053b573d6000803e3d6000fd5b5050505060408051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815260200160017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152509050806000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690837f01000000000000000000000000000000000000000000000000000000000000009004021790555090505050505050565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160007effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191681525090565b60405161025d806106e4833901905600608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a7230582010a3731e0ba2da3eb4f0b5af3aba2d76580b8e8cd59b791a66306ee663db06620029a165627a7a72305820d651d114d558b7388145ae3cbd17e454328e72d4e62813a88bb4e0f88dc872a00029",
+  "bytecode": "0x608060405234801561001057600080fd5b5061096c806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a0c9d9914610051578063c1a68a23146100b9575b600080fd5b34801561005d57600080fd5b5061009f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff1690602001909291905050506100fc565b604051808215151515815260200191505060405180910390f35b3480156100c557600080fd5b506100fa600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103c3565b005b6000610106610681565b60008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016000820160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815250509150816000015173ffffffffffffffffffffffffffffffffffffffff16636e026642856040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff168152602001915050602060405180830381600087803b15801561029c57600080fd5b505af11580156102b0573d6000803e3d6000fd5b505050506040513d60208110156102c657600080fd5b810190808051906020019092919050505090508080156103b9575060017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9250505092915050565b606060006103cf610681565b60056040519080825280602002602001820160405280156103ff5781602001602082028038833980820191505090505b509250600183600081518110151561041357fe5b9060200190602002019060ff16908160ff1681525050600283600181518110151561043a57fe5b9060200190602002019060ff16908160ff16815250506104586106d3565b604051809103906000f080158015610474573d6000803e3d6000fd5b5091508173ffffffffffffffffffffffffffffffffffffffff166326a17cbc846040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019060200280838360005b838110156105025780820151818401526020810190506104e7565b5050505090500192505050600060405180830381600087803b15801561052757600080fd5b505af115801561053b573d6000803e3d6000fd5b5050505060408051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815260200160017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152509050806000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690837f01000000000000000000000000000000000000000000000000000000000000009004021790555090505050505050565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160007effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191681525090565b60405161025d806106e4833901905600608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a72305820233591183d9bf46aaa5004bb8464ee0179c0ff91b3892f0c040d1ea76736cf290029a165627a7a723058205c877fbcb2f08589f5844dd500e38842cb9f8c93d9b6616709d81849271c38340029",
+  "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632a0c9d9914610051578063c1a68a23146100b9575b600080fd5b34801561005d57600080fd5b5061009f600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803560ff1690602001909291905050506100fc565b604051808215151515815260200191505060405180910390f35b3480156100c557600080fd5b506100fa600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506103c3565b005b6000610106610681565b60008060008673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000206040805190810160405290816000820160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020016000820160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19167effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916815250509150816000015173ffffffffffffffffffffffffffffffffffffffff16636e026642856040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260ff1660ff168152602001915050602060405180830381600087803b15801561029c57600080fd5b505af11580156102b0573d6000803e3d6000fd5b505050506040513d60208110156102c657600080fd5b810190808051906020019092919050505090508080156103b9575060017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19166000808773ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160149054906101000a90047f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff1916145b9250505092915050565b606060006103cf610681565b60056040519080825280602002602001820160405280156103ff5781602001602082028038833980820191505090505b509250600183600081518110151561041357fe5b9060200190602002019060ff16908160ff1681525050600283600181518110151561043a57fe5b9060200190602002019060ff16908160ff16815250506104586106d3565b604051809103906000f080158015610474573d6000803e3d6000fd5b5091508173ffffffffffffffffffffffffffffffffffffffff166326a17cbc846040518263ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018080602001828103825283818151815260200191508051906020019060200280838360005b838110156105025780820151818401526020810190506104e7565b5050505090500192505050600060405180830381600087803b15801561052757600080fd5b505af115801561053b573d6000803e3d6000fd5b5050505060408051908101604052808373ffffffffffffffffffffffffffffffffffffffff16815260200160017f0100000000000000000000000000000000000000000000000000000000000000027effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff19168152509050806000808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160000160146101000a81548160ff02191690837f01000000000000000000000000000000000000000000000000000000000000009004021790555090505050505050565b6040805190810160405280600073ffffffffffffffffffffffffffffffffffffffff16815260200160007effffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff191681525090565b60405161025d806106e4833901905600608060405234801561001057600080fd5b5061023d806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806326a17cbc1461005c5780636e026642146100c257806370a3b2ae1461010a575b600080fd5b34801561006857600080fd5b506100c060048036038101908080359060200190820180359060200190808060200260200160405190810160405280939291908181526020018383602002808284378201915050505050509192919290505050610146565b005b3480156100ce57600080fd5b506100f0600480360381019080803560ff1690602001909291905050506101ae565b604051808215151515815260200191505060405180910390f35b34801561011657600080fd5b50610144600480360381019080803560ff1690602001909291908035151590602001909291905050506101dd565b005b60008090505b81518110156101aa576001600080848481518110151561016857fe5b9060200190602002015160ff1660ff16815260200190815260200160002060006101000a81548160ff021916908315150217905550808060010191505061014c565b5050565b60008060008360ff1660ff16815260200190815260200160002060009054906101000a900460ff169050919050565b806000808460ff1660ff16815260200190815260200160002060006101000a81548160ff02191690831515021790555050505600a165627a7a72305820233591183d9bf46aaa5004bb8464ee0179c0ff91b3892f0c040d1ea76736cf290029a165627a7a723058205c877fbcb2f08589f5844dd500e38842cb9f8c93d9b6616709d81849271c38340029",
   "sourceMap": "57:1039:6:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:1039:6;;;;;;;",
   "deployedSourceMap": "57:1039:6:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;777:316;;8:9:-1;5:2;;;30:1;27;20:12;5:2;777:316:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:533;;8:9:-1;5:2;;;30:1;27;20:12;5:2;232:533:6;;;;;;;;;;;;;;;;;;;;;;;;;;;;777:316;864:7;884:26;;:::i;:::-;947:17;913:11;:23;925:10;913:23;;;;;;;;;;;;;;;884:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;967:9;:19;;;:35;;;1003:10;967:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;967:47:6;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;967:47:6;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;967:47:6;;;;;;;;;;;;;;;;947:67;;1030:12;:55;;;;;1083:1;1078:7;;1046:39;;;:11;:23;1058:10;1046:23;;;;;;;;;;;;;;;:28;;;;;;;;;;;;:39;;;;1030:55;1025:60;;777:316;;;;;;:::o;232:533::-;308:26;523:19;634:26;;:::i;:::-;349:1;337:14;;;;;;;;;;;;;;;;;;;;;;29:2:-1;21:6;17:15;117:4;105:10;97:6;88:34;148:4;140:6;136:17;126:27;;0:157;337:14:6;;;;308:43;;379:1;362:11;374:1;362:14;;;;;;;;;;;;;;;;;:18;;;;;;;;;;;408:1;391:11;403:1;391:14;;;;;;;;;;;;;;;;;:18;;;;;;;;;;;545:15;;:::i;:::-;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;545:15:6;523:37;;571:9;:29;;;601:11;571:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;571:42:6;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;571:42:6;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;571:42:6;;;;663:48;;;;;;;;;685:9;663:48;;;;;;707:1;702:7;;663:48;;;;;;634:77;;748:9;722:11;:23;734:10;722:23;;;;;;;;;;;;;;;:35;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;232:533;;;;:::o;57:1039::-;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.21;\r\n\r\nimport \"./Cobertura.sol\";\r\n\r\ncontract Prestadores {\r\n    \r\n    struct Prestador {\r\n        Cobertura cobertura;\r\n        byte flag;\r\n    }\r\n    \r\n    mapping(address => Prestador) prestadores;\r\n    \r\n    function adicionarPrestador(address _prestador) public {\r\n        \r\n        uint8[] memory agrupadores = new uint8[](5);\r\n        agrupadores[0] = 1;\r\n        agrupadores[1] = 2;\r\n        //agrupadores[2] = 3;\r\n        //agrupadores[3] = 4;\r\n        //agrupadores[4] = 5;\r\n        \r\n        Cobertura cobertura = new Cobertura();\r\n        cobertura.registrarCoberturas(agrupadores);\r\n        \r\n        Prestador memory prestador = Prestador({cobertura: cobertura, flag: byte(1)});\r\n        prestadores[_prestador] = prestador;\r\n    }\r\n    \r\n    function verificarPrestador(address _prestador, uint8 _agrupador) public view returns (bool ok) {\r\n        Prestador memory prestador = prestadores[_prestador];\r\n        bool temCobertura = prestador.cobertura.possuiCobertura(_agrupador);\r\n        ok = temCobertura && prestadores[_prestador].flag == byte(1);\r\n    }\r\n}",
-  "sourcePath": "C:\\DEVBC\\OperadoraBlockchain\\solidity\\contracts\\Prestadores.sol",
+  "sourcePath": "C:\\projetos\\Operadora\\OperadoraBlockchain\\solidity\\contracts\\Prestadores.sol",
   "ast": {
-    "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Prestadores.sol",
+    "absolutePath": "/C/projetos/Operadora/OperadoraBlockchain/solidity/contracts/Prestadores.sol",
     "exportedSymbols": {
       "Prestadores": [
-        1514
+        1520
       ]
     },
-    "id": 1515,
+    "id": 1521,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1411,
+        "id": 1417,
         "literals": [
           "solidity",
           "^",
@@ -67,12 +67,12 @@
         "src": "0:24:6"
       },
       {
-        "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
+        "absolutePath": "/C/projetos/Operadora/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
         "file": "./Cobertura.sol",
-        "id": 1412,
+        "id": 1418,
         "nodeType": "ImportDirective",
-        "scope": 1515,
-        "sourceUnit": 413,
+        "scope": 1521,
+        "sourceUnit": 419,
         "src": "28:25:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -80,44 +80,44 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          412
+          418
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1514,
+        "id": 1520,
         "linearizedBaseContracts": [
-          1514
+          1520
         ],
         "name": "Prestadores",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Prestadores.Prestador",
-            "id": 1417,
+            "id": 1423,
             "members": [
               {
                 "constant": false,
-                "id": 1414,
+                "id": 1420,
                 "name": "cobertura",
                 "nodeType": "VariableDeclaration",
-                "scope": 1417,
+                "scope": 1423,
                 "src": "119:19:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_Cobertura_$412",
+                  "typeIdentifier": "t_contract$_Cobertura_$418",
                   "typeString": "contract Cobertura"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 1413,
+                  "id": 1419,
                   "name": "Cobertura",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 412,
+                  "referencedDeclaration": 418,
                   "src": "119:9:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Cobertura_$412",
+                    "typeIdentifier": "t_contract$_Cobertura_$418",
                     "typeString": "contract Cobertura"
                   }
                 },
@@ -126,10 +126,10 @@
               },
               {
                 "constant": false,
-                "id": 1416,
+                "id": 1422,
                 "name": "flag",
                 "nodeType": "VariableDeclaration",
-                "scope": 1417,
+                "scope": 1423,
                 "src": "149:9:6",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -138,7 +138,7 @@
                   "typeString": "bytes1"
                 },
                 "typeName": {
-                  "id": 1415,
+                  "id": 1421,
                   "name": "byte",
                   "nodeType": "ElementaryTypeName",
                   "src": "149:4:6",
@@ -153,27 +153,27 @@
             ],
             "name": "Prestador",
             "nodeType": "StructDefinition",
-            "scope": 1514,
+            "scope": 1520,
             "src": "91:75:6",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 1421,
+            "id": 1427,
             "name": "prestadores",
             "nodeType": "VariableDeclaration",
-            "scope": 1514,
+            "scope": 1520,
             "src": "178:41:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
               "typeString": "mapping(address => struct Prestadores.Prestador)"
             },
             "typeName": {
-              "id": 1420,
+              "id": 1426,
               "keyType": {
-                "id": 1418,
+                "id": 1424,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "186:7:6",
@@ -185,18 +185,18 @@
               "nodeType": "Mapping",
               "src": "178:29:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                 "typeString": "mapping(address => struct Prestadores.Prestador)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 1419,
+                "id": 1425,
                 "name": "Prestador",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 1417,
+                "referencedDeclaration": 1423,
                 "src": "197:9:6",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                  "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                   "typeString": "struct Prestadores.Prestador"
                 }
               }
@@ -206,21 +206,21 @@
           },
           {
             "body": {
-              "id": 1475,
+              "id": 1481,
               "nodeType": "Block",
               "src": "287:478:6",
               "statements": [
                 {
                   "assignments": [
-                    1429
+                    1435
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1429,
+                      "id": 1435,
                       "name": "agrupadores",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "308:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -230,7 +230,7 @@
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 1427,
+                          "id": 1433,
                           "name": "uint8",
                           "nodeType": "ElementaryTypeName",
                           "src": "308:5:6",
@@ -239,7 +239,7 @@
                             "typeString": "uint8"
                           }
                         },
-                        "id": 1428,
+                        "id": 1434,
                         "length": null,
                         "nodeType": "ArrayTypeName",
                         "src": "308:7:6",
@@ -252,14 +252,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1435,
+                  "id": 1441,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
                         "hexValue": "35",
-                        "id": 1433,
+                        "id": 1439,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -282,7 +282,7 @@
                           "typeString": "int_const 5"
                         }
                       ],
-                      "id": 1432,
+                      "id": 1438,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -295,7 +295,7 @@
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 1430,
+                          "id": 1436,
                           "name": "uint8",
                           "nodeType": "ElementaryTypeName",
                           "src": "341:5:6",
@@ -304,7 +304,7 @@
                             "typeString": "uint8"
                           }
                         },
-                        "id": 1431,
+                        "id": 1437,
                         "length": null,
                         "nodeType": "ArrayTypeName",
                         "src": "341:7:6",
@@ -314,7 +314,7 @@
                         }
                       }
                     },
-                    "id": 1434,
+                    "id": 1440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -334,7 +334,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1440,
+                    "id": 1446,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -343,22 +343,22 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1436,
+                        "id": 1442,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "362:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 1438,
+                      "id": 1444,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "30",
-                        "id": 1437,
+                        "id": 1443,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -389,7 +389,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 1439,
+                      "id": 1445,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -410,14 +410,14 @@
                       "typeString": "uint8"
                     }
                   },
-                  "id": 1441,
+                  "id": 1447,
                   "nodeType": "ExpressionStatement",
                   "src": "362:18:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1446,
+                    "id": 1452,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -426,22 +426,22 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1442,
+                        "id": 1448,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "391:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 1444,
+                      "id": 1450,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "31",
-                        "id": 1443,
+                        "id": 1449,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -472,7 +472,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "32",
-                      "id": 1445,
+                      "id": 1451,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -493,37 +493,37 @@
                       "typeString": "uint8"
                     }
                   },
-                  "id": 1447,
+                  "id": 1453,
                   "nodeType": "ExpressionStatement",
                   "src": "391:18:6"
                 },
                 {
                   "assignments": [
-                    1449
+                    1455
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1449,
+                      "id": 1455,
                       "name": "cobertura",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "523:19:6",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Cobertura_$412",
+                        "typeIdentifier": "t_contract$_Cobertura_$418",
                         "typeString": "contract Cobertura"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1448,
+                        "id": 1454,
                         "name": "Cobertura",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 412,
+                        "referencedDeclaration": 418,
                         "src": "523:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
@@ -531,13 +531,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1453,
+                  "id": 1459,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 1451,
+                      "id": 1457,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -545,23 +545,23 @@
                       "nodeType": "NewExpression",
                       "src": "545:13:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cobertura_$412_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cobertura_$418_$",
                         "typeString": "function () returns (contract Cobertura)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1450,
+                        "id": 1456,
                         "name": "Cobertura",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 412,
+                        "referencedDeclaration": 418,
                         "src": "549:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       }
                     },
-                    "id": 1452,
+                    "id": 1458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -571,7 +571,7 @@
                     "nodeType": "FunctionCall",
                     "src": "545:15:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Cobertura_$412",
+                      "typeIdentifier": "t_contract$_Cobertura_$418",
                       "typeString": "contract Cobertura"
                     }
                   },
@@ -584,11 +584,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1457,
+                        "id": 1463,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "601:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
@@ -605,32 +605,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1454,
+                        "id": 1460,
                         "name": "cobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1449,
+                        "referencedDeclaration": 1455,
                         "src": "571:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
-                      "id": 1456,
+                      "id": 1462,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "registrarCoberturas",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 391,
                       "src": "571:29:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_uint8_$dyn_memory_ptr_$returns$__$",
                         "typeString": "function (uint8[] memory) external"
                       }
                     },
-                    "id": 1458,
+                    "id": 1464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -644,37 +644,37 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1459,
+                  "id": 1465,
                   "nodeType": "ExpressionStatement",
                   "src": "571:42:6"
                 },
                 {
                   "assignments": [
-                    1461
+                    1467
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1461,
+                      "id": 1467,
                       "name": "prestador",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "634:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1460,
+                        "id": 1466,
                         "name": "Prestador",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1417,
+                        "referencedDeclaration": 1423,
                         "src": "634:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                          "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                           "typeString": "struct Prestadores.Prestador"
                         }
                       },
@@ -682,20 +682,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1468,
+                  "id": 1474,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1463,
+                        "id": 1469,
                         "name": "cobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1449,
+                        "referencedDeclaration": 1455,
                         "src": "685:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
@@ -705,7 +705,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "31",
-                            "id": 1465,
+                            "id": 1471,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -728,7 +728,7 @@
                               "typeString": "int_const 1"
                             }
                           ],
-                          "id": 1464,
+                          "id": 1470,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -741,7 +741,7 @@
                           },
                           "typeName": "byte"
                         },
-                        "id": 1466,
+                        "id": 1472,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -758,18 +758,18 @@
                     ],
                     "expression": {
                       "argumentTypes": null,
-                      "id": 1462,
+                      "id": 1468,
                       "name": "Prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1417,
+                      "referencedDeclaration": 1423,
                       "src": "663:9:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Prestador_$1417_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Prestador_$1423_storage_ptr_$",
                         "typeString": "type(struct Prestadores.Prestador storage pointer)"
                       }
                     },
-                    "id": 1467,
+                    "id": 1473,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -782,7 +782,7 @@
                     "nodeType": "FunctionCall",
                     "src": "663:48:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_memory",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_memory",
                       "typeString": "struct Prestadores.Prestador memory"
                     }
                   },
@@ -792,7 +792,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1473,
+                    "id": 1479,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -801,25 +801,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1469,
+                        "id": 1475,
                         "name": "prestadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1421,
+                        "referencedDeclaration": 1427,
                         "src": "722:11:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                           "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                         }
                       },
-                      "id": 1471,
+                      "id": 1477,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 1470,
+                        "id": 1476,
                         "name": "_prestador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1423,
+                        "referencedDeclaration": 1429,
                         "src": "734:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -833,7 +833,7 @@
                       "nodeType": "IndexAccess",
                       "src": "722:23:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                         "typeString": "struct Prestadores.Prestador storage ref"
                       }
                     },
@@ -841,31 +841,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1472,
+                      "id": 1478,
                       "name": "prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1461,
+                      "referencedDeclaration": 1467,
                       "src": "748:9:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador memory"
                       }
                     },
                     "src": "722:35:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                       "typeString": "struct Prestadores.Prestador storage ref"
                     }
                   },
-                  "id": 1474,
+                  "id": 1480,
                   "nodeType": "ExpressionStatement",
                   "src": "722:35:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1476,
+            "id": 1482,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -873,15 +873,15 @@
             "name": "adicionarPrestador",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1424,
+              "id": 1430,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1423,
+                  "id": 1429,
                   "name": "_prestador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1476,
+                  "scope": 1482,
                   "src": "260:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -890,7 +890,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1422,
+                    "id": 1428,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "260:7:6",
@@ -907,12 +907,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1425,
+              "id": 1431,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "287:0:6"
             },
-            "scope": 1514,
+            "scope": 1520,
             "src": "232:533:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -920,37 +920,37 @@
           },
           {
             "body": {
-              "id": 1512,
+              "id": 1518,
               "nodeType": "Block",
               "src": "873:220:6",
               "statements": [
                 {
                   "assignments": [
-                    1486
+                    1492
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1486,
+                      "id": 1492,
                       "name": "prestador",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1513,
+                      "scope": 1519,
                       "src": "884:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1485,
+                        "id": 1491,
                         "name": "Prestador",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1417,
+                        "referencedDeclaration": 1423,
                         "src": "884:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                          "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                           "typeString": "struct Prestadores.Prestador"
                         }
                       },
@@ -958,30 +958,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1490,
+                  "id": 1496,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 1487,
+                      "id": 1493,
                       "name": "prestadores",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1421,
+                      "referencedDeclaration": 1427,
                       "src": "913:11:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                         "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                       }
                     },
-                    "id": 1489,
+                    "id": 1495,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 1488,
+                      "id": 1494,
                       "name": "_prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1478,
+                      "referencedDeclaration": 1484,
                       "src": "925:10:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -995,7 +995,7 @@
                     "nodeType": "IndexAccess",
                     "src": "913:23:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                       "typeString": "struct Prestadores.Prestador storage ref"
                     }
                   },
@@ -1004,15 +1004,15 @@
                 },
                 {
                   "assignments": [
-                    1492
+                    1498
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1492,
+                      "id": 1498,
                       "name": "temCobertura",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1513,
+                      "scope": 1519,
                       "src": "947:17:6",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1021,7 +1021,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1491,
+                        "id": 1497,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "947:4:6",
@@ -1034,17 +1034,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1498,
+                  "id": 1504,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1496,
+                        "id": 1502,
                         "name": "_agrupador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1480,
+                        "referencedDeclaration": 1486,
                         "src": "1003:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -1063,46 +1063,46 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1493,
+                          "id": 1499,
                           "name": "prestador",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1486,
+                          "referencedDeclaration": 1492,
                           "src": "967:9:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                            "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                             "typeString": "struct Prestadores.Prestador memory"
                           }
                         },
-                        "id": 1494,
+                        "id": 1500,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "cobertura",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1414,
+                        "referencedDeclaration": 1420,
                         "src": "967:19:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
-                      "id": 1495,
+                      "id": 1501,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "possuiCobertura",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 411,
+                      "referencedDeclaration": 417,
                       "src": "967:35:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_uint8_$returns$_t_bool_$",
                         "typeString": "function (uint8) view external returns (bool)"
                       }
                     },
-                    "id": 1497,
+                    "id": 1503,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1122,18 +1122,18 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1510,
+                    "id": 1516,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1499,
+                      "id": 1505,
                       "name": "ok",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1483,
+                      "referencedDeclaration": 1489,
                       "src": "1025:2:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1148,18 +1148,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1509,
+                      "id": 1515,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 1500,
+                        "id": 1506,
                         "name": "temCobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1492,
+                        "referencedDeclaration": 1498,
                         "src": "1030:12:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -1174,7 +1174,7 @@
                           "typeIdentifier": "t_bytes1",
                           "typeString": "bytes1"
                         },
-                        "id": 1508,
+                        "id": 1514,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1185,25 +1185,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1501,
+                              "id": 1507,
                               "name": "prestadores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1421,
+                              "referencedDeclaration": 1427,
                               "src": "1046:11:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                                 "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                               }
                             },
-                            "id": 1503,
+                            "id": 1509,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1502,
+                              "id": 1508,
                               "name": "_prestador",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1478,
+                              "referencedDeclaration": 1484,
                               "src": "1058:10:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -1217,18 +1217,18 @@
                             "nodeType": "IndexAccess",
                             "src": "1046:23:6",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                              "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                               "typeString": "struct Prestadores.Prestador storage ref"
                             }
                           },
-                          "id": 1504,
+                          "id": 1510,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "flag",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1416,
+                          "referencedDeclaration": 1422,
                           "src": "1046:28:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -1243,7 +1243,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "31",
-                              "id": 1506,
+                              "id": 1512,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1266,7 +1266,7 @@
                                 "typeString": "int_const 1"
                               }
                             ],
-                            "id": 1505,
+                            "id": 1511,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1279,7 +1279,7 @@
                             },
                             "typeName": "byte"
                           },
-                          "id": 1507,
+                          "id": 1513,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1311,14 +1311,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1511,
+                  "id": 1517,
                   "nodeType": "ExpressionStatement",
                   "src": "1025:60:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1513,
+            "id": 1519,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1326,15 +1326,15 @@
             "name": "verificarPrestador",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1481,
+              "id": 1487,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1478,
+                  "id": 1484,
                   "name": "_prestador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "805:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1343,7 +1343,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1477,
+                    "id": 1483,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "805:7:6",
@@ -1357,10 +1357,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1480,
+                  "id": 1486,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "825:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1369,7 +1369,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 1479,
+                    "id": 1485,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "825:5:6",
@@ -1386,15 +1386,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1484,
+              "id": 1490,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1483,
+                  "id": 1489,
                   "name": "ok",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "864:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1403,7 +1403,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1482,
+                    "id": 1488,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "864:4:6",
@@ -1418,31 +1418,31 @@
               ],
               "src": "863:9:6"
             },
-            "scope": 1514,
+            "scope": 1520,
             "src": "777:316:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1515,
+        "scope": 1521,
         "src": "57:1039:6"
       }
     ],
     "src": "0:1096:6"
   },
   "legacyAST": {
-    "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Prestadores.sol",
+    "absolutePath": "/C/projetos/Operadora/OperadoraBlockchain/solidity/contracts/Prestadores.sol",
     "exportedSymbols": {
       "Prestadores": [
-        1514
+        1520
       ]
     },
-    "id": 1515,
+    "id": 1521,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1411,
+        "id": 1417,
         "literals": [
           "solidity",
           "^",
@@ -1453,12 +1453,12 @@
         "src": "0:24:6"
       },
       {
-        "absolutePath": "/C/DEVBC/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
+        "absolutePath": "/C/projetos/Operadora/OperadoraBlockchain/solidity/contracts/Cobertura.sol",
         "file": "./Cobertura.sol",
-        "id": 1412,
+        "id": 1418,
         "nodeType": "ImportDirective",
-        "scope": 1515,
-        "sourceUnit": 413,
+        "scope": 1521,
+        "sourceUnit": 419,
         "src": "28:25:6",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1466,44 +1466,44 @@
       {
         "baseContracts": [],
         "contractDependencies": [
-          412
+          418
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1514,
+        "id": 1520,
         "linearizedBaseContracts": [
-          1514
+          1520
         ],
         "name": "Prestadores",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Prestadores.Prestador",
-            "id": 1417,
+            "id": 1423,
             "members": [
               {
                 "constant": false,
-                "id": 1414,
+                "id": 1420,
                 "name": "cobertura",
                 "nodeType": "VariableDeclaration",
-                "scope": 1417,
+                "scope": 1423,
                 "src": "119:19:6",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_contract$_Cobertura_$412",
+                  "typeIdentifier": "t_contract$_Cobertura_$418",
                   "typeString": "contract Cobertura"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 1413,
+                  "id": 1419,
                   "name": "Cobertura",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 412,
+                  "referencedDeclaration": 418,
                   "src": "119:9:6",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Cobertura_$412",
+                    "typeIdentifier": "t_contract$_Cobertura_$418",
                     "typeString": "contract Cobertura"
                   }
                 },
@@ -1512,10 +1512,10 @@
               },
               {
                 "constant": false,
-                "id": 1416,
+                "id": 1422,
                 "name": "flag",
                 "nodeType": "VariableDeclaration",
-                "scope": 1417,
+                "scope": 1423,
                 "src": "149:9:6",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1524,7 +1524,7 @@
                   "typeString": "bytes1"
                 },
                 "typeName": {
-                  "id": 1415,
+                  "id": 1421,
                   "name": "byte",
                   "nodeType": "ElementaryTypeName",
                   "src": "149:4:6",
@@ -1539,27 +1539,27 @@
             ],
             "name": "Prestador",
             "nodeType": "StructDefinition",
-            "scope": 1514,
+            "scope": 1520,
             "src": "91:75:6",
             "visibility": "public"
           },
           {
             "constant": false,
-            "id": 1421,
+            "id": 1427,
             "name": "prestadores",
             "nodeType": "VariableDeclaration",
-            "scope": 1514,
+            "scope": 1520,
             "src": "178:41:6",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+              "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
               "typeString": "mapping(address => struct Prestadores.Prestador)"
             },
             "typeName": {
-              "id": 1420,
+              "id": 1426,
               "keyType": {
-                "id": 1418,
+                "id": 1424,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "186:7:6",
@@ -1571,18 +1571,18 @@
               "nodeType": "Mapping",
               "src": "178:29:6",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                 "typeString": "mapping(address => struct Prestadores.Prestador)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 1419,
+                "id": 1425,
                 "name": "Prestador",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 1417,
+                "referencedDeclaration": 1423,
                 "src": "197:9:6",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                  "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                   "typeString": "struct Prestadores.Prestador"
                 }
               }
@@ -1592,21 +1592,21 @@
           },
           {
             "body": {
-              "id": 1475,
+              "id": 1481,
               "nodeType": "Block",
               "src": "287:478:6",
               "statements": [
                 {
                   "assignments": [
-                    1429
+                    1435
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1429,
+                      "id": 1435,
                       "name": "agrupadores",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "308:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
@@ -1616,7 +1616,7 @@
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 1427,
+                          "id": 1433,
                           "name": "uint8",
                           "nodeType": "ElementaryTypeName",
                           "src": "308:5:6",
@@ -1625,7 +1625,7 @@
                             "typeString": "uint8"
                           }
                         },
-                        "id": 1428,
+                        "id": 1434,
                         "length": null,
                         "nodeType": "ArrayTypeName",
                         "src": "308:7:6",
@@ -1638,14 +1638,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1435,
+                  "id": 1441,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
                         "hexValue": "35",
-                        "id": 1433,
+                        "id": 1439,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1668,7 +1668,7 @@
                           "typeString": "int_const 5"
                         }
                       ],
-                      "id": 1432,
+                      "id": 1438,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1681,7 +1681,7 @@
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 1430,
+                          "id": 1436,
                           "name": "uint8",
                           "nodeType": "ElementaryTypeName",
                           "src": "341:5:6",
@@ -1690,7 +1690,7 @@
                             "typeString": "uint8"
                           }
                         },
-                        "id": 1431,
+                        "id": 1437,
                         "length": null,
                         "nodeType": "ArrayTypeName",
                         "src": "341:7:6",
@@ -1700,7 +1700,7 @@
                         }
                       }
                     },
-                    "id": 1434,
+                    "id": 1440,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1720,7 +1720,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1440,
+                    "id": 1446,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1729,22 +1729,22 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1436,
+                        "id": 1442,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "362:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 1438,
+                      "id": 1444,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "30",
-                        "id": 1437,
+                        "id": 1443,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1775,7 +1775,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 1439,
+                      "id": 1445,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1796,14 +1796,14 @@
                       "typeString": "uint8"
                     }
                   },
-                  "id": 1441,
+                  "id": 1447,
                   "nodeType": "ExpressionStatement",
                   "src": "362:18:6"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1446,
+                    "id": 1452,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1812,22 +1812,22 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1442,
+                        "id": 1448,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "391:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
                           "typeString": "uint8[] memory"
                         }
                       },
-                      "id": 1444,
+                      "id": 1450,
                       "indexExpression": {
                         "argumentTypes": null,
                         "hexValue": "31",
-                        "id": 1443,
+                        "id": 1449,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1858,7 +1858,7 @@
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "32",
-                      "id": 1445,
+                      "id": 1451,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1879,37 +1879,37 @@
                       "typeString": "uint8"
                     }
                   },
-                  "id": 1447,
+                  "id": 1453,
                   "nodeType": "ExpressionStatement",
                   "src": "391:18:6"
                 },
                 {
                   "assignments": [
-                    1449
+                    1455
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1449,
+                      "id": 1455,
                       "name": "cobertura",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "523:19:6",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Cobertura_$412",
+                        "typeIdentifier": "t_contract$_Cobertura_$418",
                         "typeString": "contract Cobertura"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1448,
+                        "id": 1454,
                         "name": "Cobertura",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 412,
+                        "referencedDeclaration": 418,
                         "src": "523:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
@@ -1917,13 +1917,13 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1453,
+                  "id": 1459,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 1451,
+                      "id": 1457,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1931,23 +1931,23 @@
                       "nodeType": "NewExpression",
                       "src": "545:13:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cobertura_$412_$",
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_Cobertura_$418_$",
                         "typeString": "function () returns (contract Cobertura)"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1450,
+                        "id": 1456,
                         "name": "Cobertura",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 412,
+                        "referencedDeclaration": 418,
                         "src": "549:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       }
                     },
-                    "id": 1452,
+                    "id": 1458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1957,7 +1957,7 @@
                     "nodeType": "FunctionCall",
                     "src": "545:15:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Cobertura_$412",
+                      "typeIdentifier": "t_contract$_Cobertura_$418",
                       "typeString": "contract Cobertura"
                     }
                   },
@@ -1970,11 +1970,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1457,
+                        "id": 1463,
                         "name": "agrupadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1429,
+                        "referencedDeclaration": 1435,
                         "src": "601:11:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_array$_t_uint8_$dyn_memory_ptr",
@@ -1991,32 +1991,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 1454,
+                        "id": 1460,
                         "name": "cobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1449,
+                        "referencedDeclaration": 1455,
                         "src": "571:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
-                      "id": 1456,
+                      "id": 1462,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "registrarCoberturas",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 385,
+                      "referencedDeclaration": 391,
                       "src": "571:29:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_array$_t_uint8_$dyn_memory_ptr_$returns$__$",
                         "typeString": "function (uint8[] memory) external"
                       }
                     },
-                    "id": 1458,
+                    "id": 1464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2030,37 +2030,37 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1459,
+                  "id": 1465,
                   "nodeType": "ExpressionStatement",
                   "src": "571:42:6"
                 },
                 {
                   "assignments": [
-                    1461
+                    1467
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1461,
+                      "id": 1467,
                       "name": "prestador",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1476,
+                      "scope": 1482,
                       "src": "634:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1460,
+                        "id": 1466,
                         "name": "Prestador",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1417,
+                        "referencedDeclaration": 1423,
                         "src": "634:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                          "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                           "typeString": "struct Prestadores.Prestador"
                         }
                       },
@@ -2068,20 +2068,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1468,
+                  "id": 1474,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1463,
+                        "id": 1469,
                         "name": "cobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1449,
+                        "referencedDeclaration": 1455,
                         "src": "685:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
@@ -2091,7 +2091,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "31",
-                            "id": 1465,
+                            "id": 1471,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2114,7 +2114,7 @@
                               "typeString": "int_const 1"
                             }
                           ],
-                          "id": 1464,
+                          "id": 1470,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2127,7 +2127,7 @@
                           },
                           "typeName": "byte"
                         },
-                        "id": 1466,
+                        "id": 1472,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2144,18 +2144,18 @@
                     ],
                     "expression": {
                       "argumentTypes": null,
-                      "id": 1462,
+                      "id": 1468,
                       "name": "Prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1417,
+                      "referencedDeclaration": 1423,
                       "src": "663:9:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Prestador_$1417_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Prestador_$1423_storage_ptr_$",
                         "typeString": "type(struct Prestadores.Prestador storage pointer)"
                       }
                     },
-                    "id": 1467,
+                    "id": 1473,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2168,7 +2168,7 @@
                     "nodeType": "FunctionCall",
                     "src": "663:48:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_memory",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_memory",
                       "typeString": "struct Prestadores.Prestador memory"
                     }
                   },
@@ -2178,7 +2178,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1473,
+                    "id": 1479,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2187,25 +2187,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 1469,
+                        "id": 1475,
                         "name": "prestadores",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1421,
+                        "referencedDeclaration": 1427,
                         "src": "722:11:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                          "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                           "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                         }
                       },
-                      "id": 1471,
+                      "id": 1477,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 1470,
+                        "id": 1476,
                         "name": "_prestador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1423,
+                        "referencedDeclaration": 1429,
                         "src": "734:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -2219,7 +2219,7 @@
                       "nodeType": "IndexAccess",
                       "src": "722:23:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                         "typeString": "struct Prestadores.Prestador storage ref"
                       }
                     },
@@ -2227,31 +2227,31 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1472,
+                      "id": 1478,
                       "name": "prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1461,
+                      "referencedDeclaration": 1467,
                       "src": "748:9:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador memory"
                       }
                     },
                     "src": "722:35:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                       "typeString": "struct Prestadores.Prestador storage ref"
                     }
                   },
-                  "id": 1474,
+                  "id": 1480,
                   "nodeType": "ExpressionStatement",
                   "src": "722:35:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1476,
+            "id": 1482,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2259,15 +2259,15 @@
             "name": "adicionarPrestador",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1424,
+              "id": 1430,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1423,
+                  "id": 1429,
                   "name": "_prestador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1476,
+                  "scope": 1482,
                   "src": "260:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2276,7 +2276,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1422,
+                    "id": 1428,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "260:7:6",
@@ -2293,12 +2293,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1425,
+              "id": 1431,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "287:0:6"
             },
-            "scope": 1514,
+            "scope": 1520,
             "src": "232:533:6",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2306,37 +2306,37 @@
           },
           {
             "body": {
-              "id": 1512,
+              "id": 1518,
               "nodeType": "Block",
               "src": "873:220:6",
               "statements": [
                 {
                   "assignments": [
-                    1486
+                    1492
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1486,
+                      "id": 1492,
                       "name": "prestador",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1513,
+                      "scope": 1519,
                       "src": "884:26:6",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                        "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                         "typeString": "struct Prestadores.Prestador"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 1485,
+                        "id": 1491,
                         "name": "Prestador",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 1417,
+                        "referencedDeclaration": 1423,
                         "src": "884:9:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Prestador_$1417_storage_ptr",
+                          "typeIdentifier": "t_struct$_Prestador_$1423_storage_ptr",
                           "typeString": "struct Prestadores.Prestador"
                         }
                       },
@@ -2344,30 +2344,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1490,
+                  "id": 1496,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 1487,
+                      "id": 1493,
                       "name": "prestadores",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1421,
+                      "referencedDeclaration": 1427,
                       "src": "913:11:6",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                        "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                         "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                       }
                     },
-                    "id": 1489,
+                    "id": 1495,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 1488,
+                      "id": 1494,
                       "name": "_prestador",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1478,
+                      "referencedDeclaration": 1484,
                       "src": "925:10:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -2381,7 +2381,7 @@
                     "nodeType": "IndexAccess",
                     "src": "913:23:6",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                      "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                       "typeString": "struct Prestadores.Prestador storage ref"
                     }
                   },
@@ -2390,15 +2390,15 @@
                 },
                 {
                   "assignments": [
-                    1492
+                    1498
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1492,
+                      "id": 1498,
                       "name": "temCobertura",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1513,
+                      "scope": 1519,
                       "src": "947:17:6",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2407,7 +2407,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 1491,
+                        "id": 1497,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "947:4:6",
@@ -2420,17 +2420,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1498,
+                  "id": 1504,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1496,
+                        "id": 1502,
                         "name": "_agrupador",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1480,
+                        "referencedDeclaration": 1486,
                         "src": "1003:10:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint8",
@@ -2449,46 +2449,46 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 1493,
+                          "id": 1499,
                           "name": "prestador",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1486,
+                          "referencedDeclaration": 1492,
                           "src": "967:9:6",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Prestador_$1417_memory_ptr",
+                            "typeIdentifier": "t_struct$_Prestador_$1423_memory_ptr",
                             "typeString": "struct Prestadores.Prestador memory"
                           }
                         },
-                        "id": 1494,
+                        "id": 1500,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "cobertura",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 1414,
+                        "referencedDeclaration": 1420,
                         "src": "967:19:6",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Cobertura_$412",
+                          "typeIdentifier": "t_contract$_Cobertura_$418",
                           "typeString": "contract Cobertura"
                         }
                       },
-                      "id": 1495,
+                      "id": 1501,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "possuiCobertura",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 411,
+                      "referencedDeclaration": 417,
                       "src": "967:35:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_uint8_$returns$_t_bool_$",
                         "typeString": "function (uint8) view external returns (bool)"
                       }
                     },
-                    "id": 1497,
+                    "id": 1503,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2508,18 +2508,18 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1510,
+                    "id": 1516,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1499,
+                      "id": 1505,
                       "name": "ok",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1483,
+                      "referencedDeclaration": 1489,
                       "src": "1025:2:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2534,18 +2534,18 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 1509,
+                      "id": 1515,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 1500,
+                        "id": 1506,
                         "name": "temCobertura",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1492,
+                        "referencedDeclaration": 1498,
                         "src": "1030:12:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
@@ -2560,7 +2560,7 @@
                           "typeIdentifier": "t_bytes1",
                           "typeString": "bytes1"
                         },
-                        "id": 1508,
+                        "id": 1514,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2571,25 +2571,25 @@
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 1501,
+                              "id": 1507,
                               "name": "prestadores",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1421,
+                              "referencedDeclaration": 1427,
                               "src": "1046:11:6",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1417_storage_$",
+                                "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Prestador_$1423_storage_$",
                                 "typeString": "mapping(address => struct Prestadores.Prestador storage ref)"
                               }
                             },
-                            "id": 1503,
+                            "id": 1509,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 1502,
+                              "id": 1508,
                               "name": "_prestador",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 1478,
+                              "referencedDeclaration": 1484,
                               "src": "1058:10:6",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -2603,18 +2603,18 @@
                             "nodeType": "IndexAccess",
                             "src": "1046:23:6",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Prestador_$1417_storage",
+                              "typeIdentifier": "t_struct$_Prestador_$1423_storage",
                               "typeString": "struct Prestadores.Prestador storage ref"
                             }
                           },
-                          "id": 1504,
+                          "id": 1510,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "flag",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1416,
+                          "referencedDeclaration": 1422,
                           "src": "1046:28:6",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes1",
@@ -2629,7 +2629,7 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "31",
-                              "id": 1506,
+                              "id": 1512,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -2652,7 +2652,7 @@
                                 "typeString": "int_const 1"
                               }
                             ],
-                            "id": 1505,
+                            "id": 1511,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2665,7 +2665,7 @@
                             },
                             "typeName": "byte"
                           },
-                          "id": 1507,
+                          "id": 1513,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -2697,14 +2697,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 1511,
+                  "id": 1517,
                   "nodeType": "ExpressionStatement",
                   "src": "1025:60:6"
                 }
               ]
             },
             "documentation": null,
-            "id": 1513,
+            "id": 1519,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2712,15 +2712,15 @@
             "name": "verificarPrestador",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1481,
+              "id": 1487,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1478,
+                  "id": 1484,
                   "name": "_prestador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "805:18:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2729,7 +2729,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1477,
+                    "id": 1483,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "805:7:6",
@@ -2743,10 +2743,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 1480,
+                  "id": 1486,
                   "name": "_agrupador",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "825:16:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2755,7 +2755,7 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 1479,
+                    "id": 1485,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
                     "src": "825:5:6",
@@ -2772,15 +2772,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 1484,
+              "id": 1490,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1483,
+                  "id": 1489,
                   "name": "ok",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1513,
+                  "scope": 1519,
                   "src": "864:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2789,7 +2789,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1482,
+                    "id": 1488,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "864:4:6",
@@ -2804,14 +2804,14 @@
               ],
               "src": "863:9:6"
             },
-            "scope": 1514,
+            "scope": 1520,
             "src": "777:316:6",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1515,
+        "scope": 1521,
         "src": "57:1039:6"
       }
     ],
@@ -2821,7 +2821,14 @@
     "name": "solc",
     "version": "0.4.23+commit.124ca40d.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xfb5bea5ebb1b528e693fee6229f1162de070436a",
+      "transactionHash": "0x903c76ece2796c2ebc47a7b311605a7f381b1ca3236d731a666dcc320d0f6c05"
+    }
+  },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-05-09T03:39:17.640Z"
+  "updatedAt": "2018-05-09T14:42:40.915Z"
 }

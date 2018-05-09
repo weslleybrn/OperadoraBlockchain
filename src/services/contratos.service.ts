@@ -157,7 +157,7 @@ export class ContratosService {
       });
     } catch (e) {
       console.log(e);
-      console.log('Error verificando beneficiario; see log.');
+      console.log('Error consultando saldo; see log.');
     }
   }
 
