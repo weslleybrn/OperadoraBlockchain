@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recibo-contrato.component.css']
 })
 export class ReciboContratoComponent implements OnInit {
+  data: Date;
 
   constructor() { }
 
   ngOnInit() {
+    this.data = new Date();
   }
 
 }
