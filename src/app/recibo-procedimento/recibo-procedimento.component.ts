@@ -14,4 +14,8 @@ export class ReciboProcedimentoComponent implements OnInit {
     this.data = new Date();
   }
 
+  reset(): any {
+    window.location.href = '/';
+  }
+
 }

@@ -86,7 +86,7 @@ export class PrestadorService {
     const deployed = await this.Prestadores.deployed();
     return deployed.address;
   }
-  
+
   getPrestador(): Observable<Prestador> {
     return this.$prestador;
   }

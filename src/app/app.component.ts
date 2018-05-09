@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Web3Service } from '../services/web3.service';
 import { Router, RouterModule, ActivatedRoute } from '@angular/router';
 

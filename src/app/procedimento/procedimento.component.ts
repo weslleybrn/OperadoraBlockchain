@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Contrato, ContratosService, Beneficiario } from '../../services/contratos.service';
 import { ServicosService, Servico } from '../../services/servicos.service';
 import { AutorizadorService } from '../../services/autorizador.service';
@@ -10,7 +10,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-procedimento',
   templateUrl: './procedimento.component.html',
-  styleUrls: ['./procedimento.component.css']
+  styleUrls: ['./procedimento.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ProcedimentoComponent implements OnInit {
   form: FormGroup;

@@ -62,16 +62,10 @@ export class AutorizacaoComponent implements OnInit {
   async solicitar() {
 
     await this.autorizadorService.registrarAutorizacao(
-            await this.contratoService.getEndereco(), 
-            environment.carteiraAlice, 
-            await this.servicosService.getEndereco(), 
-            1, "EX003", 1);
-
-    // this.autorizadorService.consultarSaldo().then(
-    //   s => {
-    //     console.log(s);
-    //   }
-    // );
+            await this.contratoService.getEndereco(),
+            environment.carteiraAlice,
+            await this.servicosService.getEndereco(),
+            1, 'EX003', 1);
 
     this.router.navigate(['/recibocontrato']);
   }
