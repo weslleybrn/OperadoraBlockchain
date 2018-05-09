@@ -38,3 +38,11 @@
 .button-row-custom {
     padding-top: 10px;
 }
+
+.lista-enumerada {
+    font-size: 10px;
+}
+
+.screen {
+    background-image: url('../../assets/imgs/backgroud2.jpg') !important;
+}
