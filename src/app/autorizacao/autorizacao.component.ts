@@ -67,21 +67,6 @@ export class AutorizacaoComponent implements OnInit {
             await this.servicosService.getEndereco(), 
             1, "EX003", 1);
 
-    await this.autorizadorService.realizarExecucao(
-      await this.prestadorService.getEndereco(), 
-      await this.servicosService.getEndereco(),
-      environment.carteiraPrestador,
-      1
-    );
-
-    this.autorizadorService.consultarSaldo().then(
-      s => {
-        console.log(s);
-      }
-    );
-
-    await this.autorizadorService.confirmarExecucao(1, environment.carteiraPrestador);
-
     // this.autorizadorService.consultarSaldo().then(
     //   s => {
     //     console.log(s);
